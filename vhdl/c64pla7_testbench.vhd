@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 library work;
-use work.c64pla7;
+use work.all;
 
 entity c64pla7_testbench is
 end entity c64pla7_testbench;
@@ -4138,41 +4138,9 @@ architecture test of c64pla7_testbench is
 	signal ba: std_logic := '0';
 	signal a12: std_logic := '0';
 
-	component c64pla7 is
-		port(
-			fe: in std_logic;
-			a13: in std_logic;
-			a14: in std_logic;
-			a15: in std_logic;
-			va14: in std_logic;
-			charen: in std_logic;
-			hiram: in std_logic;
-			loram: in std_logic;
-			cas: in std_logic;
-			romh: out std_logic;
-			roml: out std_logic;
-			io: out std_logic;
-			ramrw: out std_logic;
-			grw: out std_logic;
-			charom: out std_logic;
-			kernal: out std_logic;
-			basic: out std_logic;
-			casram: out std_logic;
-			xoe: in std_logic;
-			va12: in std_logic;
-			va13: in std_logic;
-			game: in std_logic;
-			exrom: in std_logic;
-			rw: in std_logic;
-			aec: in std_logic;
-			ba: in std_logic;
-			a12: in std_logic
-		);
-	end component;
-
 begin
 	
-	c64pla7_inst: c64pla7 
+	c64pla7_inst: entity c64pla7 
 		port map(
 			fe => fe,
 			a13 => a13,
