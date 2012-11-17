@@ -1,0 +1,91 @@
+-- MAX+plus II Compiler Fit File      
+-- Version 10.2 07/10/2002            
+-- Compiled: 02/19/2003 21:15:17      
+
+-- Copyright (C) 1988-2002 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+CHIP "c64pla7"
+BEGIN
+
+    DEVICE = "EPM7032LC44-6";
+
+    "aec"                          : INPUT_PIN  = 13     ; -- LC9
+    "a12"                          : INPUT_PIN  = 20     ; -- LC15
+    "a13"                          : INPUT_PIN  = 19     ; -- LC14
+    "a14"                          : INPUT_PIN  = 18     ; -- LC13
+    "a15"                          : INPUT_PIN  = 17     ; -- LC12
+    "ba"                           : INPUT_PIN  = 16     ; -- LC11
+    "cas"                          : INPUT_PIN  = 14     ; -- LC10
+    "charen"                       : INPUT_PIN  = 11     ; -- LC7
+    "exrom"                        : INPUT_PIN  = 7      ; -- LC4
+    "game"                         : INPUT_PIN  = 6      ; -- LC3
+    "hiram"                        : INPUT_PIN  = 5      ; -- LC2
+    "loram"                        : INPUT_PIN  = 21     ; -- LC16
+    "rw"                           : INPUT_PIN  = 4      ; -- LC1
+    "va12"                         : INPUT_PIN  = 8      ; -- LC5
+    "va13"                         : INPUT_PIN  = 9      ; -- LC6
+    "va14"                         : INPUT_PIN  = 12     ; -- LC8
+    "xoe"                          : INPUT_PIN  = 44     ;
+    "basic"                        : OUTPUT_PIN = 40     ; -- LC18
+    "casram"                       : OUTPUT_PIN = 39     ; -- LC19
+    "charom"                       : OUTPUT_PIN = 37     ; -- LC21
+    "io"                           : OUTPUT_PIN = 36     ; -- LC22
+    "kernal"                       : OUTPUT_PIN = 41     ; -- LC17
+    "ramrw"                        : OUTPUT_PIN = 29     ; -- LC27
+    "romh"                         : OUTPUT_PIN = 31     ; -- LC26
+    "roml"                         : OUTPUT_PIN = 34     ; -- LC23
+    "~643~1"                       : LOCATION   = LC20   ; -- PIN 38
+    "~643~2"                       : LOCATION   = LC24   ; -- PIN 33
+    "~643~3"                       : LOCATION   = LC25   ; -- PIN 32
+
+END;
+
+INTERNAL_INFO "c64pla7"
+BEGIN
+	DEVICE = EPM7032LC44-6;
+	LC26    : LORAX = "G39R0";
+	LC23    : LORAX = "G32R0";
+	LC22    : LORAX = "G31R0";
+	LC27    : LORAX = "G40R0";
+	LC21    : LORAX = "G30R0";
+	LC17    : LORAX = "G13R0";
+	LC18    : LORAX = "G14R0";
+	LC19    : LORAX = "G15R0";
+	OH13R0P19 : LORAX = "G18R0,PA13R0C1";
+	OH12R0P18 : LORAX = "G17R0,PA15R0C1";
+	OH11R0P17 : LORAX = "G3R0,PA3R0C1";
+	OH1R0P5 : LORAX = "G44R0,PA19R0C1";
+	OH2R0P6 : LORAX = "G45R0,PA22R0C1";
+	OH3R0P7 : LORAX = "G46R0,PA24R0C1";
+	OH0R0P4 : LORAX = "G43R0,PA20R0C1";
+	OH8R0P13 : LORAX = "G0R0,PA6R0C1";
+	OH4R0P8 : LORAX = "G60R0,PA29R0C1";
+	OH5R0P9 : LORAX = "G61R0,PA28R0C1";
+	OH15R0P21 : LORAX = "G20R0,PA12R0C1";
+	OH6R0P11 : LORAX = "G62R0,PA31R0C1";
+	OH10R0P16 : LORAX = "G2R0,PA0R0C1";
+	OH14R0P20 : LORAX = "G19R0,PA9R0C1";
+	OH7R0P12 : LORAX = "G63R0,PA33R0C1";
+	OH9R0P14 : LORAX = "G1R0,PA4R0C1";
+	LC20    : LORAX = "G16R0,PA1R0C1";
+	LC24    : LORAX = "G33R0,PA10R0C1";
+	LC25    : LORAX = "G38R0,PA18R0C1";
+END;

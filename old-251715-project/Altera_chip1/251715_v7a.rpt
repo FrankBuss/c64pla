@@ -1,0 +1,689 @@
+Project Information            c:\max2work\project\251715\chip1\251715_v7a.rpt
+
+MAX+plus II Compiler Report File
+Version 10.2 07/10/2002
+Compiled: 02/23/2003 17:10:12
+
+Copyright (C) 1988-2002 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input   Output   Bidir         Shareable
+POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
+
+251715_v7a
+      EPM7032SLC44-10      16       8        8      20      15          62 %
+
+User Pins:                 16       8        8  
+
+
+
+Project Information            c:\max2work\project\251715\chip1\251715_v7a.rpt
+
+** PIN/LOCATION/CHIP ASSIGNMENTS **
+
+                  Actual                  
+    User       Assignments                
+Assignments   (if different)     Node Name
+
+251715_v7a@27                     aec
+251715_v7a@37                     a4
+251715_v7a@39                     a5
+251715_v7a@40                     a6
+251715_v7a@41                     a7
+251715_v7a@44                     a12
+251715_v7a@43                     a13
+251715_v7a@1                      a14
+251715_v7a@2                      a15
+251715_v7a@28                     ba
+251715_v7a@12                     _basic
+251715_v7a@25                     _cas
+251715_v7a@16                     _casram
+251715_v7a@8                      _charen
+251715_v7a@11                     _charom
+251715_v7a@33                     _exrom
+251715_v7a@34                     _game
+251715_v7a@6                      _hiram
+251715_v7a@24                     _io
+251715_v7a@14                     _kernal
+251715_v7a@5                      _loram
+251715_v7a@18                     ma4
+251715_v7a@19                     ma5
+251715_v7a@17                     ma6
+251715_v7a@20                     ma7
+251715_v7a@21                     ramr_w
+251715_v7a@26                     _ras
+251715_v7a@36                     _romh
+251715_v7a@31                     _romlo
+251715_v7a@4                      r_w
+251715_v7a@29                     va6
+251715_v7a@9                      _va14
+
+
+Project Information            c:\max2work\project\251715\chip1\251715_v7a.rpt
+
+** FILE HIERARCHY **
+
+
+
+|c64pla7:1|
+|74257:26|
+|74373:27|
+|74258:28|
+
+
+Device-Specific Information:   c:\max2work\project\251715\chip1\251715_v7a.rpt
+251715_v7a
+
+***** Logic for device '251715_v7a' compiled without errors.
+
+
+
+
+Device: EPM7032SLC44-10
+
+Device Options:
+    Turbo Bit                                    = ON
+    Security Bit                                 = OFF
+    Enable JTAG Support                        = ON
+    User Code                                  = ffff
+
+                                              
+             _  _                             
+             h  l                             
+             i  o                             
+             r  r  r  V  a  a  a  a  G        
+             a  a  _  C  1  1  1  1  N  a  a  
+             m  m  w  C  5  4  2  3  D  7  6  
+           -----------------------------------_ 
+         /   6  5  4  3  2  1 44 43 42 41 40   | 
+   #TDI |  7                                39 | a5 
+_charen |  8                                38 | #TDO 
+  _va14 |  9                                37 | a4 
+    GND | 10                                36 | _romh 
+_charom | 11                                35 | VCC 
+ _basic | 12        EPM7032SLC44-10         34 | _game 
+   #TMS | 13                                33 | _exrom 
+_kernal | 14                                32 | #TCK 
+    VCC | 15                                31 | _romlo 
+_casram | 16                                30 | GND 
+    ma6 | 17                                29 | va6 
+        |_  18 19 20 21 22 23 24 25 26 27 28  _| 
+          ------------------------------------ 
+             m  m  m  r  G  V  _  _  _  a  b  
+             a  a  a  a  N  C  i  c  r  e  a  
+             4  5  7  m  D  C  o  a  a  c     
+                      r           s  s        
+                      _                       
+                      w                       
+                                              
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCC = Dedicated power pin, which MUST be connected to VCC.
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+^ = Dedicated configuration pin.
++ = Reserved configuration pin, which is tri-stated during user mode.
+* = Reserved configuration pin, which drives out in user mode.
+PDn = Power Down pin. 
+@ = Special-purpose pin. 
+# = JTAG Boundary-Scan Testing/In-System Programming or Configuration Pin. The JTAG inputs TMS and TDI should be tied to VCC and TCK should be tied to GND when not in use.
+& = JTAG pin used for I/O. When used as user I/O, JTAG pins must be kept stable before and during configuration.  JTAG pin stability prevents accidental loading of JTAG instructions.
+
+
+Device-Specific Information:   c:\max2work\project\251715\chip1\251715_v7a.rpt
+251715_v7a
+
+** RESOURCE USAGE **
+
+                                                Shareable     External
+Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
+
+A:     LC1 - LC16     9/16( 56%)  16/16(100%)  14/16( 87%)  24/36( 66%) 
+B:    LC17 - LC32    11/16( 68%)  16/16(100%)   4/16( 25%)  21/36( 58%) 
+
+
+Total dedicated input pins used:                 4/4      (100%)
+Total I/O pins used:                            32/32     (100%)
+Total logic cells used:                         20/32     ( 62%)
+Total shareable expanders used:                 15/32     ( 46%)
+Total Turbo logic cells used:                   20/32     ( 62%)
+Total shareable expanders not available (n/a):   3/32     (  9%)
+Average fan-in:                                  7.10
+Total fan-in:                                   142
+
+Total input pins required:                      16
+Total fast input logic cells required:           0
+Total output pins required:                      8
+Total bidirectional pins required:               8
+Total reserved pins required                     4
+Total logic cells required:                     20
+Total flipflops required:                        0
+Total product terms required:                   67
+Total logic cells lending parallel expanders:    0
+Total shareable expanders in database:          15
+
+Synthesized logic cells:                         4/  32   ( 12%)
+
+
+
+Device-Specific Information:   c:\max2work\project\251715\chip1\251715_v7a.rpt
+251715_v7a
+
+** INPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  27   (29)  (B)      INPUT               0      0   0    0    0    9    4  aec
+  37     21    B      BIDIR               0      0   0    1    2    1    0  a4
+  39     19    B      BIDIR               0      0   0    1    2    1    0  a5
+  40     18    B      BIDIR               0      0   0    1    2    1    0  a6
+  41     17    B      BIDIR               0      0   0    1    2    1    0  a7
+  44      -   -       INPUT               0      0   0    0    0    4    2  a12
+  43      -   -       INPUT               0      0   0    0    0    8    2  a13
+   1      -   -       INPUT               0      0   0    0    0    8    2  a14
+   2      -   -       INPUT               0      0   0    0    0    8    2  a15
+  28   (28)  (B)      INPUT               0      0   0    0    0    2    2  ba
+  25   (31)  (B)      INPUT               0      0   0    0    0    5    0  _cas
+   8    (5)  (A)      INPUT               0      0   0    0    0    2    2  _charen
+  33   (24)  (B)      INPUT               0      0   0    0    0    6    2  _exrom
+  34   (23)  (B)      INPUT               0      0   0    0    0    7    1  _game
+   6    (3)  (A)      INPUT               0      0   0    0    0    7    2  _hiram
+   5    (2)  (A)      INPUT               0      0   0    0    0    5    2  _loram
+  18     13    A      BIDIR               0      0   0    3    0    4    1  ma4
+  19     14    A      BIDIR               0      0   0    3    0    4    1  ma5
+  17     12    A      BIDIR               0      0   0    6    0    1    0  ma6
+  20     15    A      BIDIR               0      0   0    3    0    1    0  ma7
+  26   (30)  (B)      INPUT               0      0   0    0    0    5    0  _ras
+   4    (1)  (A)      INPUT               0      0   0    0    0    8    2  r_w
+  29   (27)  (B)      INPUT               0      0   0    0    0    1    0  va6
+   9    (6)  (A)      INPUT               0      0   0    0    0    3    0  _va14
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:   c:\max2work\project\251715\chip1\251715_v7a.rpt
+251715_v7a
+
+** OUTPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  37     21    B        TRI      t        0      0   0    1    2    1    0  a4
+  39     19    B        TRI      t        0      0   0    1    2    1    0  a5
+  40     18    B        TRI      t        0      0   0    1    2    1    0  a6
+  41     17    B        TRI      t        0      0   0    1    2    1    0  a7
+  12      8    A     OUTPUT      t        0      0   0    8    0    0    0  _basic
+  16     11    A     OUTPUT      t       13      0   0   13    4    0    0  _casram
+  11      7    A     OUTPUT      t        1      0   1   12    2    0    0  _charom
+  24     32    B     OUTPUT      t        2      0   0   12    0    0    0  _io
+  14     10    A     OUTPUT      t        0      0   0    8    0    0    0  _kernal
+  18     13    A        TRI      t        0      0   0    3    0    4    1  ma4
+  19     14    A        TRI      t        0      0   0    3    0    4    1  ma5
+  17     12    A        TRI      t        0      0   0    6    0    1    0  ma6
+  20     15    A        TRI      t        0      0   0    3    0    1    0  ma7
+  21     16    A     OUTPUT      t        0      0   0    3    0    0    0  ramr_w
+  36     22    B     OUTPUT      t        0      0   0    8    2    0    0  _romh
+  31     26    B     OUTPUT      t        0      0   0    9    0    0    0  _romlo
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:   c:\max2work\project\251715\chip1\251715_v7a.rpt
+251715_v7a
+
+** BURIED LOGIC **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+ (33)    24    B       SOFT    s t        0      0   0    1    0    0    0  aec~1
+ (26)    30    B       SOFT    s t        0      0   0    1    0    0    0  aec~2
+ (38)    20    B       SOFT    s t        1      0   1   12    2    1    0  |c64pla7:1|~643~1
+ (29)    27    B       SOFT    s t        1      0   1   11    0    1    0  |c64pla7:1|~643~2
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:   c:\max2work\project\251715\chip1\251715_v7a.rpt
+251715_v7a
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'A':
+
+                           Logic cells placed in LAB 'A'
+        +----------------- LC8 _basic
+        | +--------------- LC11 _casram
+        | | +------------- LC7 _charom
+        | | | +----------- LC10 _kernal
+        | | | | +--------- LC13 ma4
+        | | | | | +------- LC14 ma5
+        | | | | | | +----- LC12 ma6
+        | | | | | | | +--- LC15 ma7
+        | | | | | | | | +- LC16 ramr_w
+        | | | | | | | | | 
+        | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | |   that feed LAB 'A'
+LC      | | | | | | | | | | A B |     Logic cells that feed LAB 'A':
+LC13 -> - * * - - - - - - | * * | <-- ma4
+LC14 -> - * * - - - - - - | * * | <-- ma5
+
+Pin
+27   -> * * * * - - * - * | * * | <-- aec
+37   -> - - - - * - - - - | * - | <-- a4
+39   -> - - - - - * - - - | * - | <-- a5
+40   -> - - - - - - * - - | * - | <-- a6
+41   -> - - - - - - - * - | * - | <-- a7
+44   -> - * * - * - - - - | * * | <-- a12
+43   -> * * * * - * - - - | * * | <-- a13
+1    -> * * * * - - * - - | * * | <-- a14
+2    -> * * * * - - - * - | * * | <-- a15
+28   -> - * - - - - - - - | * * | <-- ba
+25   -> - * - - * * * * - | * - | <-- _cas
+8    -> - - * - - - - - - | * * | <-- _charen
+33   -> - * * * - - - - - | * * | <-- _exrom
+34   -> * * * * - - - - - | * * | <-- _game
+6    -> * * * * - - - - - | * * | <-- _hiram
+5    -> * * * - - - - - - | * * | <-- _loram
+26   -> - - - - - - - - * | * * | <-- _ras
+4    -> * * * * - - - - * | * * | <-- r_w
+29   -> - - - - - - * - - | * - | <-- va6
+9    -> - * * - - - * - - | * - | <-- _va14
+LC20 -> - * - - - - - - - | * - | <-- |c64pla7:1|~643~1
+LC27 -> - * - - - - - - - | * - | <-- |c64pla7:1|~643~2
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:   c:\max2work\project\251715\chip1\251715_v7a.rpt
+251715_v7a
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'B':
+
+                               Logic cells placed in LAB 'B'
+        +--------------------- LC24 aec~1
+        | +------------------- LC30 aec~2
+        | | +----------------- LC21 a4
+        | | | +--------------- LC19 a5
+        | | | | +------------- LC18 a6
+        | | | | | +----------- LC17 a7
+        | | | | | | +--------- LC20 |c64pla7:1|~643~1
+        | | | | | | | +------- LC27 |c64pla7:1|~643~2
+        | | | | | | | | +----- LC32 _io
+        | | | | | | | | | +--- LC22 _romh
+        | | | | | | | | | | +- LC26 _romlo
+        | | | | | | | | | | | 
+        | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | |   that feed LAB 'B'
+LC      | | | | | | | | | | | | A B |     Logic cells that feed LAB 'B':
+LC21 -> - - * - - - - - - - - | - * | <-- a4
+LC19 -> - - - * - - - - - - - | - * | <-- a5
+LC18 -> - - - - * - - - - - - | - * | <-- a6
+LC17 -> - - - - - * - - - - - | - * | <-- a7
+
+Pin
+27   -> * * - - - - * * * * * | * * | <-- aec
+44   -> - - - - - - * * * - - | * * | <-- a12
+43   -> - - - - - - * * * * * | * * | <-- a13
+1    -> - - - - - - * * * * * | * * | <-- a14
+2    -> - - - - - - * * * * * | * * | <-- a15
+28   -> - - - - - - * * * - - | * * | <-- ba
+8    -> - - - - - - * * * - - | * * | <-- _charen
+33   -> - - - - - - * * * * * | * * | <-- _exrom
+34   -> - - - - - - * - * * * | * * | <-- _game
+6    -> - - - - - - * * * * * | * * | <-- _hiram
+5    -> - - - - - - * * * - * | * * | <-- _loram
+26   -> - - * * * * - - - - - | * * | <-- _ras
+4    -> - - - - - - * * * * * | * * | <-- r_w
+LC13 -> - - * - - - * - - * - | * * | <-- ma4
+LC14 -> - - - * - - * - - * - | * * | <-- ma5
+LC12 -> - - - - * - - - - - - | - * | <-- ma6
+LC15 -> - - - - - * - - - - - | - * | <-- ma7
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:   c:\max2work\project\251715\chip1\251715_v7a.rpt
+251715_v7a
+
+** EQUATIONS **
+
+aec      : INPUT;
+a12      : INPUT;
+a13      : INPUT;
+a14      : INPUT;
+a15      : INPUT;
+ba       : INPUT;
+r_w      : INPUT;
+va6      : INPUT;
+_cas     : INPUT;
+_charen  : INPUT;
+_exrom   : INPUT;
+_game    : INPUT;
+_hiram   : INPUT;
+_loram   : INPUT;
+_ras     : INPUT;
+_va14    : INPUT;
+
+-- Node name is 'aec~1' 
+-- Equation name is 'aec~1', location is LC024, type is buried.
+-- synthesized logic cell 
+_LC024   = LCELL( aec $  GND);
+
+-- Node name is 'aec~2' 
+-- Equation name is 'aec~2', location is LC030, type is buried.
+-- synthesized logic cell 
+_LC030   = LCELL( aec $  GND);
+
+-- Node name is 'a4' = '|74373:27|:12' 
+-- Equation name is 'a4', type is bidir 
+a4       = TRI(_LC021, !_LC030);
+_LC021   = LCELL( _EQ001 $  GND);
+  _EQ001 =  ma4 &  _ras
+         #  _LC021 &  ma4
+         #  _LC021 & !_ras;
+
+-- Node name is 'a5' = '|74373:27|:13' 
+-- Equation name is 'a5', type is bidir 
+a5       = TRI(_LC019, !_LC030);
+_LC019   = LCELL( _EQ002 $  GND);
+  _EQ002 =  ma5 &  _ras
+         #  _LC019 &  ma5
+         #  _LC019 & !_ras;
+
+-- Node name is 'a6' = '|74373:27|:14' 
+-- Equation name is 'a6', type is bidir 
+a6       = TRI(_LC018, !_LC030);
+_LC018   = LCELL( _EQ003 $  GND);
+  _EQ003 =  ma6 &  _ras
+         #  _LC018 &  ma6
+         #  _LC018 & !_ras;
+
+-- Node name is 'a7' = '|74373:27|:15' 
+-- Equation name is 'a7', type is bidir 
+a7       = TRI(_LC017, !_LC030);
+_LC017   = LCELL( _EQ004 $  GND);
+  _EQ004 =  ma7 &  _ras
+         #  _LC017 &  ma7
+         #  _LC017 & !_ras;
+
+-- Node name is 'ma4' 
+-- Equation name is 'ma4', location is LC013, type is bidir.
+ma4      = TRI(_LC013,  _LC024);
+_LC013   = LCELL( _EQ005 $  GND);
+  _EQ005 =  a4 &  _cas
+         #  a12 & !_cas;
+
+-- Node name is 'ma5' 
+-- Equation name is 'ma5', location is LC014, type is bidir.
+ma5      = TRI(_LC014,  _LC024);
+_LC014   = LCELL( _EQ006 $  GND);
+  _EQ006 =  a5 &  _cas
+         #  a13 & !_cas;
+
+-- Node name is 'ma6' 
+-- Equation name is 'ma6', location is LC012, type is bidir.
+ma6      = TRI(_LC012,  VCC);
+_LC012   = LCELL( _EQ007 $  VCC);
+  _EQ007 =  aec & !a6 &  _cas
+         # !aec &  _cas & !va6
+         # !aec & !_cas &  _va14
+         #  aec & !a14 & !_cas;
+
+-- Node name is 'ma7' 
+-- Equation name is 'ma7', location is LC015, type is bidir.
+ma7      = TRI(_LC015,  _LC024);
+_LC015   = LCELL( _EQ008 $  GND);
+  _EQ008 =  a7 &  _cas
+         #  a15 & !_cas;
+
+-- Node name is 'ramr_w' 
+-- Equation name is 'ramr_w', location is LC016, type is output.
+ ramr_w  = LCELL( _EQ009 $  VCC);
+  _EQ009 =  aec & !_ras & !r_w;
+
+-- Node name is '|c64pla7:1|~643~1' from file "c64pla7.tdf" line 148, column 6
+-- Equation name is '_LC020', type is buried 
+-- synthesized logic cell 
+_LC020   = LCELL( _EQ010 $  GND);
+  _EQ010 = !aec &  _exrom & !_game &  ma4 &  ma5
+         #  aec &  a12 & !a13 &  a14 &  a15 & !_charen &  _game &  _loram & 
+              r_w
+         #  aec &  a12 & !a13 &  a14 &  a15 &  ba &  _charen &  _loram
+         #  aec &  a12 &  a14 &  a15 & !_charen &  _game &  _hiram &  r_w
+         #  aec &  a12 & !a13 &  a14 &  a15 &  _charen &  _hiram & !r_w;
+
+-- Node name is '|c64pla7:1|~643~2' from file "c64pla7.tdf" line 148, column 6
+-- Equation name is '_LC027', type is buried 
+-- synthesized logic cell 
+_LC027   = LCELL( _EQ011 $  GND);
+  _EQ011 =  aec &  a12 & !a13 &  a14 &  a15 &  _charen &  _loram & !r_w
+         #  aec &  a12 &  a14 &  a15 & !_charen & !_exrom &  _hiram &  r_w
+         #  aec &  a12 &  a14 &  a15 &  ba &  _hiram &  r_w
+         #  aec & !a14 &  a15 & !_exrom &  _hiram &  _loram &  r_w
+         #  aec &  a13 &  a14 &  a15 &  _hiram &  r_w;
+
+-- Node name is '_basic' 
+-- Equation name is '_basic', location is LC008, type is output.
+ _basic  = LCELL( _EQ012 $  VCC);
+  _EQ012 =  aec &  a13 & !a14 &  a15 &  _game &  _hiram &  _loram &  r_w;
+
+-- Node name is '_casram' 
+-- Equation name is '_casram', location is LC011, type is output.
+ _casram = LCELL( _EQ013 $  VCC);
+  _EQ013 = !_cas & !_LC020 & !_LC027 &  _X001 &  _X002 &  _X003 &  _X004 & 
+              _X005 &  _X006 &  _X007 &  _X008 &  _X009 &  _X010 &  _X011 & 
+              _X012 &  _X013;
+  _X001  = EXP( aec & !a14 &  a15 &  _exrom & !_game);
+  _X002  = EXP( a13 & !a14 &  _exrom & !_game);
+  _X003  = EXP( a12 & !a15 &  _exrom & !_game);
+  _X004  = EXP( a13 & !a15 &  _exrom & !_game);
+  _X005  = EXP( aec &  a13 &  _exrom & !_game);
+  _X006  = EXP(!a12 & !a13 &  a14 &  _exrom & !_game);
+  _X007  = EXP(!aec & !_exrom &  ma4 & !ma5 &  _va14);
+  _X008  = EXP(!aec &  _game &  ma4 & !ma5 &  _va14);
+  _X009  = EXP( aec &  a13 &  a15 &  _hiram &  _loram &  r_w);
+  _X010  = EXP( aec &  a12 &  _exrom & !_game & !r_w);
+  _X011  = EXP( aec &  a12 &  ba &  _exrom & !_game);
+  _X012  = EXP(!aec &  a14 & !a15 &  ma4 & !ma5 &  _va14);
+  _X013  = EXP( aec &  a13 &  a15 & !_game &  _hiram &  r_w);
+
+-- Node name is '_charom' = '|c64pla7:1|charom_tri' from file "c64pla7.tdf" line 48, column 1
+-- Equation name is '_charom', type is output 
+ _charom = LCELL( _EQ014 $  VCC);
+  _EQ014 =  aec &  a12 & !a13 &  a14 &  a15 & !_charen & !_exrom & !_game & 
+              _hiram &  r_w
+         #  aec &  a12 & !a13 &  a14 &  a15 & !_charen &  _game &  _loram & 
+              r_w
+         #  aec &  a12 & !a13 &  a14 &  a15 & !_charen &  _game &  _hiram & 
+              r_w
+         # !aec & !_exrom & !_game &  ma4 & !ma5 &  _va14
+         # !aec &  _game &  ma4 & !ma5 &  _va14;
+
+-- Node name is '_io' 
+-- Equation name is '_io', location is LC032, type is output.
+ _io     = LCELL( _EQ015 $  VCC);
+  _EQ015 =  aec &  a12 & !a13 &  a14 &  a15 &  ba &  _charen &  _X014
+         #  aec &  a12 & !a13 &  a14 &  a15 &  _exrom & !_game &  _X015
+         #  aec &  a12 & !a13 &  a14 &  a15 &  _charen & !r_w &  _X014;
+  _X014  = EXP(!_hiram & !_loram);
+  _X015  = EXP(!ba &  r_w);
+
+-- Node name is '_kernal' 
+-- Equation name is '_kernal', location is LC010, type is output.
+ _kernal = LCELL( _EQ016 $  VCC);
+  _EQ016 =  aec &  a13 &  a14 &  a15 & !_exrom & !_game &  _hiram &  r_w
+         #  aec &  a13 &  a14 &  a15 &  _game &  _hiram &  r_w;
+
+-- Node name is '_romh' 
+-- Equation name is '_romh', location is LC022, type is output.
+ _romh   = LCELL( _EQ017 $  VCC);
+  _EQ017 =  aec &  a13 & !a14 &  a15 & !_exrom & !_game &  _hiram &  r_w
+         #  aec &  a13 &  a14 &  a15 &  _exrom & !_game
+         # !aec &  _exrom & !_game &  ma4 &  ma5;
+
+-- Node name is '_romlo' 
+-- Equation name is '_romlo', location is LC026, type is output.
+ _romlo  = LCELL( _EQ018 $  VCC);
+  _EQ018 =  aec & !a13 & !a14 &  a15 & !_exrom &  _hiram &  _loram &  r_w
+         #  aec & !a13 & !a14 &  a15 &  _exrom & !_game;
+
+
+
+--     Shareable expanders that are duplicated in multiple LABs:
+--     (none)
+
+
+
+
+Project Information            c:\max2work\project\251715\chip1\251715_v7a.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Standard
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'MAX7000S' family
+
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      PARALLEL_EXPANDERS                  = off
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SOFT_BUFFER_INSERTION               = on
+      SUBFACTOR_EXTRACTION                = on
+      TURBO_BIT                           = on
+      XOR_SYNTHESIS                       = on
+      IGNORE_SOFT_BUFFERS                 = off
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = off
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      One-Hot State Machine Encoding      = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = on
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+ADT PALACE Compilation                    = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:00
+   Database Builder                       00:00:00
+   Logic Synthesizer                      00:00:00
+   Partitioner                            00:00:00
+   Fitter                                 00:00:00
+   Timing SNF Extractor                   00:00:00
+   Assembler                              00:00:01
+   --------------------------             --------
+   Total Time                             00:00:01
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 3,225K

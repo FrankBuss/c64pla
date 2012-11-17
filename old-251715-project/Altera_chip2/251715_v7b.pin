@@ -1,0 +1,74 @@
+-- Copyright (C) 1988-2002 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCC = Dedicated power pin, which MUST be connected to VCC.
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+----------------------------------------------------------------------------
+
+CHIP "251715_v7b" ASSIGNED TO AN EPM7032SLC44-10
+_io                              : 1
+clock                            : 2
+VCC                              : 3
+RESERVED                         : 4
+nmi                              : 5
+restore                          : 6
+TDI                              : 7
+_va15                            : 8
+_cia2                            : 9
+GND                              : 10
+_colram                          : 11
+ma3                              : 12
+TMS                              : 13
+ma0                              : 14
+VCC                              : 15
+ma2                              : 16
+ma7                              : 17
+ma1                              : 18
+_cia1                            : 19
+RESERVED                         : 20
+RESERVED                         : 21
+GND                              : 22
+VCC                              : 23
+aec                              : 24
+_vic                             : 25
+va7                              : 26
+_sid                             : 27
+_i/o2                            : 28
+_i/o1                            : 29
+GND                              : 30
+a0                               : 31
+TCK                              : 32
+a1                               : 33
+a2                               : 34
+VCC                              : 35
+a3                               : 36
+a8                               : 37
+TDO                              : 38
+a9                               : 39
+a10                              : 40
+a11                              : 41
+GND                              : 42
+_ras                             : 43
+_cas                             : 44

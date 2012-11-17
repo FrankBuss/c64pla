@@ -1,0 +1,713 @@
+NDB006
+The number of symbol table entries is: 5
+The length of the symbol table is: 58
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|c64pla7:1|
+:	|74257:26|
+E	|74373:27|
+P	|74258:28|
+
+The number of name info structs is : 697
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	IGdW	!	:30	"}
+#	IGdW	!	:37	#!
+$	IGdW	!	:41	"~
+%	IGdq	!	_basic	"-
+&	Ky&|	!	5	'	@	A	B	C	_cas	}
+'	NLG+	!	13	_casram	",
+(	Ky&|	!	4	)	(G	(H	-	_charen	u
+)	NLG+	!	1	_charom	".
+*	Ky&|	!	8	'	)	(G	(H	-	.	1	2	_exrom	{
++	Ky&|	!	8	%	'	)	(G	-	.	1	2	_game	|
+,	Ky&|	!	9	%	'	)	(G	(H	-	.	1	2	_hiram	v
+-	NLG+	!	2	_io	"/
+.	IGdq	!	_kernal	"*
+/	Ky&|	!	7	%	'	)	(G	(H	-	2	_loram	~
+0	Ky&|	!	5	8	9	:	;	E	_ras	p
+1	IGdq	!	_romh	")
+2	IGdq	!	_romlo	"0
+3	Ky&|	!	3	'	)	B	_va14	t
+4	(@>U^	!	6	'	)	(G	(H	-	@	a12	w
+5	(@>U^	!	10	%	'	)	(G	(H	-	.	A	1	2	a13	o
+6	(@>U^	!	10	%	'	)	(G	(H	-	.	B	1	2	a14	r
+7	(@>U^	!	10	%	'	)	(G	(H	-	.	C	1	2	a15	s
+8	Ky'!	!	2	@	8	a4	"$
+9	Ky'!	!	2	9	A	a5	"%
+:	Ky'!	!	2	B	:	a6	"#
+;	Ky'!	!	2	C	;	a7	""
+<	Ky&|	!	13	=	>	%	'	)	(G	(H	-	.	B	E	1	2	aec	y
+=	Kx(k	!	3	@	C	A	aec~1	5w
+>	Kx(k	!	4	;	:	8	9	aec~2	5z
+?	Ky&|	!	4	'	(G	(H	-	ba	x
+@	Ky'!	!	5	8	'	)	(G	1	ma4	"!
+A	Ky'!	!	5	9	'	)	(G	1	ma5	"(
+B	Ky'!	!	1	:	ma6	"'
+C	Ky'!	!	1	;	ma7	"&
+D	Ky&|	!	10	%	'	)	(G	(H	-	.	E	1	2	r_w	z
+E	IGdq	!	ramr_w	"+
+F	Ky&|	!	1	B	va6	q
+G	IGdW	:	:18	)~
+H	IGdW	:	:2	)x
+I	IVOQ	:	Y	:20	*$
+J	IGdW	:	:21	)}
+K	IVOQ	:	Z	:22	*#
+L	IGdW	:	:25	)|
+M	IVOQ	:	[	:26	*"
+N	IVOQ	:	\	:29	*!
+O	IGdW	:	:30	){
+P	IGdW	:	:31	)z
+Q	IGdW	:	:32	)y
+R	IGdW	:	:33	)t
+S	IGdW	:	:34	)s
+T	IGdW	:	:35	)r
+U	IGdW	:	:36	)q
+V	IGdW	:	:4	)w
+W	IGdW	:	:6	)v
+X	IGdW	:	:8	)u
+Y	INu}	:	I	Y1	*$
+Z	INu}	:	K	Y2	*#
+[	INu}	:	M	Y3	*"
+\	INu}	:	N	Y4	*!
+]	IGdW	:	~20~1~1	*s
+^	IGdW	:	~20~1~2	*t
+_	IGdW	:	~20~1~3	*u
+`	IGdW	:	~20~2	*v
+a	IGdW	P	:2	*j
+b	IVOQ	P	s	:20	*d
+c	IVOQ	P	t	:22	*e
+d	IVOQ	P	u	:26	*f
+e	IVOQ	P	v	:29	*g
+f	IGdW	P	:31	*c
+g	IGdW	P	:32	*b
+h	IGdW	P	:33	*a
+i	IGdW	P	:34	*`
+j	IGdW	P	:35	*h
+k	IGdW	P	:36	*i
+l	IGdW	P	:37	*n
+m	IGdW	P	:38	*o
+n	IGdW	P	:39	*p
+o	IGdW	P	:4	*k
+p	IGdW	P	:40	*q
+q	IGdW	P	:6	*l
+r	IGdW	P	:8	*m
+s	INu}	P	b	YN1	*d
+t	INu}	P	c	YN2	*e
+u	INu}	P	d	YN3	*f
+v	INu}	P	e	YN4	*g
+w	IGdW	P	~20~1	*w
+x	IGdW	E	:1	*L
+y	IGdG	E	:12	*K
+z	IGdG	E	:13	*J
+{	IGdG	E	:14	*I
+|	IGdG	E	:15	*H
+}	IGdG	E	:16	*G
+~	IGdG	E	:17	*F
+"!	IGdG	E	:18	*E
+""	IGdG	E	:19	*D
+"#	IVOQ	E	"+	:67	*C
+"$	IVOQ	E	",	:68	*B
+"%	IVOQ	E	"-	:69	*A
+"&	IVOQ	E	".	:70	*@
+"'	IVOQ	E	"/	:71	*?
+"(	IVOQ	E	"0	:72	*>
+")	IVOQ	E	"1	:73	*=
+"*	IVOQ	E	"2	:74	*<
+"+	INu}	E	"#	Q1	*C
+",	INu}	E	"$	Q2	*B
+"-	INu}	E	"%	Q3	*A
+".	INu}	E	"&	Q4	*@
+"/	INu}	E	"'	Q5	*?
+"0	INu}	E	"(	Q6	*>
+"1	INu}	E	")	Q7	*=
+"2	INu}	E	"*	Q8	*<
+"3	IeEA	.	69	30	:100	#q
+"4	IeEA	.	69	30	:101	#r
+"5	IeEA	.	69	37	:102	#s
+"6	IeEA	.	69	37	:103	#t
+"7	IeEA	.	69	44	:104	#u
+"8	IeEA	.	69	49	:105	#v
+"9	IeEA	.	69	49	:106	#w
+":	IeEA	.	70	12	:107	#x
+";	IeEA	.	70	12	:108	#y
+"<	IeEA	.	70	19	:109	#z
+"=	IeEA	.	70	19	:110	#{
+">	IeEA	.	70	26	:111	#|
+"?	IeEA	.	70	26	:112	#}
+"@	IeEA	.	70	33	:113	#~
+"A	IeEA	.	70	41	:114	$!
+"B	IeEA	.	70	41	:115	$"
+"C	IeEA	.	70	6	:116	$#
+"D	IeEA	.	68	14	:117	$$
+"E	IeEA	.	71	14	:118	$%
+"F	IeEA	.	76	9	:119	$&
+"G	IeEA	.	76	18	:120	$'
+"H	IeEA	.	76	24	:121	$(
+"I	IeEA	.	76	30	:122	$)
+"J	IeEA	.	76	30	:123	$*
+"K	IeEA	.	76	37	:124	$+
+"L	IeEA	.	76	43	:125	$,
+"M	IeEA	.	76	48	:126	$-
+"N	IeEA	.	76	48	:127	$.
+"O	IeEA	.	76	55	:128	$/
+"P	IeEA	.	76	60	:129	$0
+"Q	IeEA	.	77	14	:130	$1
+"R	IeEA	.	77	23	:131	$2
+"S	IeEA	.	77	29	:132	$3
+"T	IeEA	.	77	35	:133	$4
+"U	IeEA	.	77	35	:134	$5
+"V	IeEA	.	77	42	:135	$6
+"W	IeEA	.	77	48	:136	$7
+"X	IeEA	.	77	48	:137	$8
+"Y	IeEA	.	77	55	:138	$9
+"Z	IeEA	.	77	55	:139	$:
+"[	IeEA	.	77	61	:140	$;
+"\	IeEA	.	77	6	:141	$<
+"]	IeEA	.	78	14	:142	$=
+"^	IeEA	.	78	23	:143	$>
+"_	IeEA	.	78	29	:144	$?
+"`	IeEA	.	78	35	:145	$@
+"a	IeEA	.	78	35	:146	$A
+"b	IeEA	.	78	42	:147	$B
+"c	IeEA	.	78	48	:148	$C
+"d	IeEA	.	78	53	:149	$D
+"e	IeEA	.	78	53	:150	$E
+"f	IeEA	.	78	60	:151	$F
+"g	IeEA	.	78	65	:152	$G
+"h	IeEA	.	78	6	:153	$H
+"i	IeEA	.	79	14	:154	$I
+"j	IeEA	.	79	23	:155	$J
+"k	IeEA	.	79	29	:156	$K
+"l	IeEA	.	79	35	:157	$L
+"m	IeEA	.	79	35	:158	$M
+"n	IeEA	.	79	42	:159	$N
+"o	IeEA	.	79	48	:160	$O
+"p	IeEA	.	79	48	:161	$P
+"q	IeEA	.	79	55	:162	$Q
+"r	IeEA	.	79	55	:163	$R
+"s	IeEA	.	79	61	:164	$S
+"t	IeEA	.	79	6	:165	$T
+"u	IeEA	.	80	14	:166	$U
+"v	IeEA	.	80	23	:167	$V
+"w	IeEA	.	80	29	:168	$W
+"x	IeEA	.	80	35	:169	$X
+"y	IeEA	.	80	35	:170	$Y
+"z	IeEA	.	80	42	:171	$Z
+"{	IeEA	.	80	48	:172	$[
+"|	IeEA	.	80	53	:173	$\
+"}	IeEA	.	80	53	:174	$]
+"~	IeEA	.	80	60	:175	$^
+#!	IeEA	.	80	65	:176	$_
+#"	IeEA	.	80	65	:177	$`
+##	IeEA	.	80	74	:178	$a
+#$	IeEA	.	80	74	:179	$b
+#%	IeEA	.	80	6	:180	$c
+#&	IeEA	.	81	14	:181	$d
+#'	IeEA	.	81	23	:182	$e
+#(	IeEA	.	81	29	:183	$f
+#)	IeEA	.	81	35	:184	$g
+#*	IeEA	.	81	35	:185	$h
+#+	IeEA	.	81	42	:186	$i
+#,	IeEA	.	81	48	:187	$j
+#-	IeEA	.	81	48	:188	$k
+#.	IeEA	.	81	55	:189	$l
+#/	IeEA	.	81	55	:190	$m
+#0	IeEA	.	81	61	:191	$n
+#1	IeEA	.	81	61	:192	$o
+#2	IeEA	.	81	70	:193	$p
+#3	IeEA	.	81	70	:194	$q
+#4	IeEA	.	81	6	:195	$r
+#5	IeEA	.	82	14	:196	$s
+#6	IeEA	.	82	23	:197	$t
+#7	IeEA	.	82	29	:198	$u
+#8	IeEA	.	82	35	:199	$v
+#9	IeEA	.	82	35	:200	$w
+#:	IeEA	.	82	42	:201	$x
+#;	IeEA	.	82	48	:202	$y
+#<	IeEA	.	82	53	:203	$z
+#=	IeEA	.	82	53	:204	${
+#>	IeEA	.	82	60	:205	$|
+#?	IeEA	.	82	65	:206	$}
+#@	IeEA	.	82	65	:207	$~
+#A	IeEA	.	82	74	:208	%!
+#B	IeEA	.	82	74	:209	%"
+#C	IeEA	.	82	6	:210	%#
+#D	IeEA	.	83	14	:211	%$
+#E	IeEA	.	83	23	:212	%%
+#F	IeEA	.	83	29	:213	%&
+#G	IeEA	.	83	35	:214	%'
+#H	IeEA	.	83	35	:215	%(
+#I	IeEA	.	83	42	:216	%)
+#J	IeEA	.	83	48	:217	%*
+#K	IeEA	.	83	48	:218	%+
+#L	IeEA	.	83	55	:219	%,
+#M	IeEA	.	83	55	:220	%-
+#N	IeEA	.	83	61	:221	%.
+#O	IeEA	.	83	61	:222	%/
+#P	IeEA	.	83	70	:223	%0
+#Q	IeEA	.	83	70	:224	%1
+#R	IeEA	.	83	6	:225	%2
+#S	IeEA	.	84	12	:226	%3
+#T	IeEA	.	84	18	:227	%4
+#U	IeEA	.	84	18	:228	%5
+#V	IeEA	.	84	25	:229	%6
+#W	IeEA	.	84	31	:230	%7
+#X	IeEA	.	84	36	:231	%8
+#Y	IeEA	.	84	36	:232	%9
+#Z	IeEA	.	84	43	:233	%:
+#[	IeEA	.	84	48	:234	%;
+#\	IeEA	.	84	56	:235	%<
+#]	IeEA	.	84	56	:236	%=
+#^	IeEA	.	84	6	:237	%>
+#_	IeEA	.	85	12	:238	%?
+#`	IeEA	.	85	18	:239	%@
+#a	IeEA	.	85	18	:240	%A
+#b	IeEA	.	85	25	:241	%B
+#c	IeEA	.	85	31	:242	%C
+#d	IeEA	.	85	31	:243	%D
+#e	IeEA	.	85	38	:244	%E
+#f	IeEA	.	85	38	:245	%F
+#g	IeEA	.	85	44	:246	%G
+#h	IeEA	.	85	52	:247	%H
+#i	IeEA	.	85	52	:248	%I
+#j	IeEA	.	85	6	:249	%J
+#k	IeEA	.	75	12	:250	%K
+#l	IeEA	.	86	12	:251	%L
+#m	IeEA	.	91	7	:252	%M
+#n	IeEA	.	91	7	:253	%N
+#o	IeEA	.	91	7	:254	%O
+#p	IeEA	.	90	15	:255	%P
+#q	IeEA	.	92	15	:256	%Q
+#r	IeEA	.	97	9	:257	%R
+#s	IeEA	.	97	9	:258	%S
+#t	IeEA	.	97	19	:259	%T
+#u	IeEA	.	97	25	:260	%U
+#v	IeEA	.	97	31	:261	%V
+#w	IeEA	.	97	31	:262	%W
+#x	IeEA	.	97	38	:263	%X
+#y	IeEA	.	97	44	:264	%Y
+#z	IeEA	.	97	44	:265	%Z
+#{	IeEA	.	97	51	:266	%[
+#|	IeEA	.	97	56	:267	%\
+#}	IeEA	.	98	14	:268	%]
+#~	IeEA	.	98	14	:269	%^
+$!	IeEA	.	98	24	:270	%_
+$"	IeEA	.	98	30	:271	%`
+$#	IeEA	.	98	36	:272	%a
+$$	IeEA	.	98	36	:273	%b
+$%	IeEA	.	98	43	:274	%c
+$&	IeEA	.	98	49	:275	%d
+$'	IeEA	.	98	49	:276	%e
+$(	IeEA	.	98	56	:277	%f
+$)	IeEA	.	98	61	:278	%g
+$*	IeEA	.	98	6	:279	%h
+$+	IeEA	.	99	14	:280	%i
+$,	IeEA	.	99	14	:281	%j
+$-	IeEA	.	99	24	:282	%k
+$.	IeEA	.	99	30	:283	%l
+$/	IeEA	.	99	36	:284	%m
+$0	IeEA	.	99	36	:285	%n
+$1	IeEA	.	99	43	:286	%o
+$2	IeEA	.	99	49	:287	%p
+$3	IeEA	.	99	49	:288	%q
+$4	IeEA	.	99	56	:289	%r
+$5	IeEA	.	99	61	:290	%s
+$6	IeEA	.	99	61	:291	%t
+$7	IeEA	.	99	70	:292	%u
+$8	IeEA	.	99	70	:293	%v
+$9	IeEA	.	99	6	:294	%w
+$:	IeEA	.	100	13	:295	%x
+$;	IeEA	.	100	19	:296	%y
+$<	IeEA	.	100	26	:297	%z
+$=	IeEA	.	100	26	:298	%{
+$>	IeEA	.	100	34	:299	%|
+$?	IeEA	.	100	6	:300	%}
+$@	IeEA	.	101	13	:301	%~
+$A	IeEA	.	101	19	:302	&!
+$B	IeEA	.	101	19	:303	&"
+$C	IeEA	.	101	28	:304	&#
+$D	IeEA	.	101	28	:305	&$
+$E	IeEA	.	101	36	:306	&%
+$F	IeEA	.	101	36	:307	&&
+$G	IeEA	.	101	44	:308	&'
+$H	IeEA	.	101	6	:309	&(
+$I	IeEA	.	96	16	:310	&)
+$J	IeEA	.	102	16	:311	&*
+$K	IeEA	.	107	9	:312	&+
+$L	IeEA	.	107	15	:313	&,
+$M	IeEA	.	107	21	:314	&-
+$N	IeEA	.	107	27	:315	&.
+$O	IeEA	.	107	27	:316	&/
+$P	IeEA	.	107	34	:317	&0
+$Q	IeEA	.	107	39	:318	&1
+$R	IeEA	.	108	14	:319	&2
+$S	IeEA	.	108	20	:320	&3
+$T	IeEA	.	108	26	:321	&4
+$U	IeEA	.	108	32	:322	&5
+$V	IeEA	.	108	32	:323	&6
+$W	IeEA	.	108	39	:324	&7
+$X	IeEA	.	108	44	:325	&8
+$Y	IeEA	.	108	44	:326	&9
+$Z	IeEA	.	108	53	:327	&:
+$[	IeEA	.	108	53	:328	&;
+$\	IeEA	.	108	6	:329	&<
+$]	IeEA	.	106	16	:330	&=
+$^	IeEA	.	109	16	:331	&>
+$_	IeEA	.	114	9	:332	&?
+$`	IeEA	.	114	17	:333	&@
+$a	IeEA	.	114	23	:334	&A
+$b	IeEA	.	114	23	:335	&B
+$c	IeEA	.	114	30	:336	&C
+$d	IeEA	.	114	36	:337	&D
+$e	IeEA	.	114	36	:338	&E
+$f	IeEA	.	114	43	:339	&F
+$g	IeEA	.	114	48	:340	&G
+$h	IeEA	.	113	15	:341	&H
+$i	IeEA	.	115	15	:342	&I
+$j	IeEA	.	120	9	:343	&J
+$k	IeEA	.	120	17	:344	&K
+$l	IeEA	.	120	23	:345	&L
+$m	IeEA	.	120	23	:346	&M
+$n	IeEA	.	120	30	:347	&N
+$o	IeEA	.	120	36	:348	&O
+$p	IeEA	.	120	36	:349	&P
+$q	IeEA	.	120	43	:350	&Q
+$r	IeEA	.	120	48	:351	&R
+$s	IeEA	.	121	14	:352	&S
+$t	IeEA	.	121	20	:353	&T
+$u	IeEA	.	121	26	:354	&U
+$v	IeEA	.	121	32	:355	&V
+$w	IeEA	.	121	32	:356	&W
+$x	IeEA	.	121	39	:357	&X
+$y	IeEA	.	121	44	:358	&Y
+$z	IeEA	.	121	6	:359	&Z
+${	IeEA	.	122	14	:360	&[
+$|	IeEA	.	122	20	:361	&\
+$}	IeEA	.	122	26	:362	&]
+$~	IeEA	.	122	32	:363	&^
+%!	IeEA	.	122	32	:364	&_
+%"	IeEA	.	122	39	:365	&`
+%#	IeEA	.	122	44	:366	&a
+%$	IeEA	.	122	44	:367	&b
+%%	IeEA	.	122	53	:368	&c
+%&	IeEA	.	122	53	:369	&d
+%'	IeEA	.	122	6	:370	&e
+%(	IeEA	.	123	14	:371	&f
+%)	IeEA	.	123	14	:372	&g
+%*	IeEA	.	123	24	:373	&h
+%+	IeEA	.	123	30	:374	&i
+%,	IeEA	.	123	36	:375	&j
+%-	IeEA	.	123	36	:376	&k
+%.	IeEA	.	123	43	:377	&l
+%/	IeEA	.	123	49	:378	&m
+%0	IeEA	.	123	49	:379	&n
+%1	IeEA	.	123	56	:380	&o
+%2	IeEA	.	123	61	:381	&p
+%3	IeEA	.	123	6	:382	&q
+%4	IeEA	.	124	14	:383	&r
+%5	IeEA	.	124	14	:384	&s
+%6	IeEA	.	124	24	:385	&t
+%7	IeEA	.	124	30	:386	&u
+%8	IeEA	.	124	36	:387	&v
+%9	IeEA	.	124	36	:388	&w
+%:	IeEA	.	124	43	:389	&x
+%;	IeEA	.	124	49	:390	&y
+%<	IeEA	.	124	49	:391	&z
+%=	IeEA	.	124	56	:392	&{
+%>	IeEA	.	124	61	:393	&|
+%?	IeEA	.	124	6	:394	&}
+%@	IeEA	.	125	14	:395	&~
+%A	IeEA	.	125	14	:396	'!
+%B	IeEA	.	125	24	:397	'"
+%C	IeEA	.	125	30	:398	'#
+%D	IeEA	.	125	36	:399	'$
+%E	IeEA	.	125	36	:400	'%
+%F	IeEA	.	125	43	:401	'&
+%G	IeEA	.	125	49	:402	''
+%H	IeEA	.	125	49	:403	'(
+%I	IeEA	.	125	56	:404	')
+%J	IeEA	.	125	61	:405	'*
+%K	IeEA	.	125	61	:406	'+
+%L	IeEA	.	125	70	:407	',
+%M	IeEA	.	125	70	:408	'-
+%N	IeEA	.	125	6	:409	'.
+%O	IeEA	.	126	13	:410	'/
+%P	IeEA	.	126	19	:411	'0
+%Q	IeEA	.	126	26	:412	'1
+%R	IeEA	.	126	26	:413	'2
+%S	IeEA	.	126	34	:414	'3
+%T	IeEA	.	126	6	:415	'4
+%U	IeEA	.	127	13	:416	'5
+%V	IeEA	.	127	19	:417	'6
+%W	IeEA	.	127	19	:418	'7
+%X	IeEA	.	127	28	:419	'8
+%Y	IeEA	.	127	28	:420	'9
+%Z	IeEA	.	127	36	:421	':
+%[	IeEA	.	127	36	:422	';
+%\	IeEA	.	127	44	:423	'<
+%]	IeEA	.	127	6	:424	'=
+%^	IeEA	.	128	14	:425	'>
+%_	IeEA	.	128	23	:426	'?
+%`	IeEA	.	128	29	:427	'@
+%a	IeEA	.	128	35	:428	'A
+%b	IeEA	.	128	35	:429	'B
+%c	IeEA	.	128	42	:430	'C
+%d	IeEA	.	128	48	:431	'D
+%e	IeEA	.	128	53	:432	'E
+%f	IeEA	.	128	53	:433	'F
+%g	IeEA	.	128	60	:434	'G
+%h	IeEA	.	128	65	:435	'H
+%i	IeEA	.	128	6	:436	'I
+%j	IeEA	.	129	14	:437	'J
+%k	IeEA	.	129	23	:438	'K
+%l	IeEA	.	129	29	:439	'L
+%m	IeEA	.	129	35	:440	'M
+%n	IeEA	.	129	35	:441	'N
+%o	IeEA	.	129	42	:442	'O
+%p	IeEA	.	129	48	:443	'P
+%q	IeEA	.	129	48	:444	'Q
+%r	IeEA	.	129	55	:445	'R
+%s	IeEA	.	129	55	:446	'S
+%t	IeEA	.	129	61	:447	'T
+%u	IeEA	.	129	6	:448	'U
+%v	IeEA	.	130	14	:449	'V
+%w	IeEA	.	130	23	:450	'W
+%x	IeEA	.	130	29	:451	'X
+%y	IeEA	.	130	35	:452	'Y
+%z	IeEA	.	130	35	:453	'Z
+%{	IeEA	.	130	42	:454	'[
+%|	IeEA	.	130	48	:455	'\
+%}	IeEA	.	130	53	:456	']
+%~	IeEA	.	130	53	:457	'^
+&!	IeEA	.	130	60	:458	'_
+&"	IeEA	.	130	65	:459	'`
+&#	IeEA	.	130	6	:460	'a
+&$	IeEA	.	131	14	:461	'b
+&%	IeEA	.	131	23	:462	'c
+&&	IeEA	.	131	29	:463	'd
+&'	IeEA	.	131	35	:464	'e
+&(	IeEA	.	131	35	:465	'f
+&)	IeEA	.	131	42	:466	'g
+&*	IeEA	.	131	48	:467	'h
+&+	IeEA	.	131	48	:468	'i
+&,	IeEA	.	131	55	:469	'j
+&-	IeEA	.	131	55	:470	'k
+&.	IeEA	.	131	61	:471	'l
+&/	IeEA	.	131	6	:472	'm
+&0	IeEA	.	132	14	:473	'n
+&1	IeEA	.	132	23	:474	'o
+&2	IeEA	.	132	29	:475	'p
+&3	IeEA	.	132	35	:476	'q
+&4	IeEA	.	132	35	:477	'r
+&5	IeEA	.	132	42	:478	's
+&6	IeEA	.	132	48	:479	't
+&7	IeEA	.	132	53	:480	'u
+&8	IeEA	.	132	53	:481	'v
+&9	IeEA	.	132	60	:482	'w
+&:	IeEA	.	132	65	:483	'x
+&;	IeEA	.	132	65	:484	'y
+&<	IeEA	.	132	74	:485	'z
+&=	IeEA	.	132	74	:486	'{
+&>	IeEA	.	132	6	:487	'|
+&?	IeEA	.	133	14	:488	'}
+&@	IeEA	.	133	23	:489	'~
+&A	IeEA	.	133	29	:490	(!
+&B	IeEA	.	133	35	:491	("
+&C	IeEA	.	133	35	:492	(#
+&D	IeEA	.	133	42	:493	($
+&E	IeEA	.	133	48	:494	(%
+&F	IeEA	.	133	48	:495	(&
+&G	IeEA	.	133	55	:496	('
+&H	IeEA	.	133	55	:497	((
+&I	IeEA	.	133	61	:498	()
+&J	IeEA	.	133	61	:499	(*
+&K	IeEA	.	133	70	:500	(+
+&L	IeEA	.	133	70	:501	(,
+&M	IeEA	.	133	6	:502	(-
+&N	IeEA	.	134	14	:503	(.
+&O	IeEA	.	134	23	:504	(/
+&P	IeEA	.	134	29	:505	(0
+&Q	IeEA	.	134	35	:506	(1
+&R	IeEA	.	134	35	:507	(2
+&S	IeEA	.	134	42	:508	(3
+&T	IeEA	.	134	48	:509	(4
+&U	IeEA	.	134	53	:510	(5
+&V	IeEA	.	134	53	:511	(6
+&W	IeEA	.	134	60	:512	(7
+&X	IeEA	.	134	65	:513	(8
+&Y	IeEA	.	134	65	:514	(9
+&Z	IeEA	.	134	74	:515	(:
+&[	IeEA	.	134	74	:516	(;
+&\	IeEA	.	134	6	:517	(<
+&]	IeEA	.	135	14	:518	(=
+&^	IeEA	.	135	23	:519	(>
+&_	IeEA	.	135	29	:520	(?
+&`	IeEA	.	135	35	:521	(@
+&a	IeEA	.	135	35	:522	(A
+&b	IeEA	.	135	42	:523	(B
+&c	IeEA	.	135	48	:524	(C
+&d	IeEA	.	135	48	:525	(D
+&e	IeEA	.	135	55	:526	(E
+&f	IeEA	.	135	55	:527	(F
+&g	IeEA	.	135	61	:528	(G
+&h	IeEA	.	135	61	:529	(H
+&i	IeEA	.	135	70	:530	(I
+&j	IeEA	.	135	70	:531	(J
+&k	IeEA	.	135	6	:532	(K
+&l	IeEA	.	136	12	:533	(L
+&m	IeEA	.	136	18	:534	(M
+&n	IeEA	.	136	18	:535	(N
+&o	IeEA	.	136	25	:536	(O
+&p	IeEA	.	136	31	:537	(P
+&q	IeEA	.	136	36	:538	(Q
+&r	IeEA	.	136	36	:539	(R
+&s	IeEA	.	136	43	:540	(S
+&t	IeEA	.	136	48	:541	(T
+&u	IeEA	.	136	56	:542	(U
+&v	IeEA	.	136	56	:543	(V
+&w	IeEA	.	136	6	:544	(W
+&x	IeEA	.	137	12	:545	(X
+&y	IeEA	.	137	18	:546	(Y
+&z	IeEA	.	137	18	:547	(Z
+&{	IeEA	.	137	25	:548	([
+&|	IeEA	.	137	31	:549	(\
+&}	IeEA	.	137	31	:550	(]
+&~	IeEA	.	137	38	:551	(^
+'!	IeEA	.	137	38	:552	(_
+'"	IeEA	.	137	44	:553	(`
+'#	IeEA	.	137	52	:554	(a
+'$	IeEA	.	137	52	:555	(b
+'%	IeEA	.	137	6	:556	(c
+'&	IeEA	.	138	14	:557	(d
+''	IeEA	.	138	22	:558	(e
+'(	IeEA	.	138	28	:559	(f
+')	IeEA	.	138	28	:560	(g
+'*	IeEA	.	138	35	:561	(h
+'+	IeEA	.	138	35	:562	(i
+',	IeEA	.	138	42	:563	(j
+'-	IeEA	.	138	42	:564	(k
+'.	IeEA	.	138	49	:565	(l
+'/	IeEA	.	138	54	:566	(m
+'0	IeEA	.	138	54	:567	(n
+'1	IeEA	.	138	6	:568	(o
+'2	IeEA	.	139	12	:569	(p
+'3	IeEA	.	139	12	:570	(q
+'4	IeEA	.	139	19	:571	(r
+'5	IeEA	.	139	19	:572	(s
+'6	IeEA	.	139	26	:573	(t
+'7	IeEA	.	139	26	:574	(u
+'8	IeEA	.	139	33	:575	(v
+'9	IeEA	.	139	41	:576	(w
+':	IeEA	.	139	41	:577	(x
+';	IeEA	.	139	6	:578	(y
+'<	IeEA	.	140	14	:579	(z
+'=	IeEA	.	140	20	:580	({
+'>	IeEA	.	140	20	:581	(|
+'?	IeEA	.	140	27	:582	(}
+'@	IeEA	.	140	33	:583	(~
+'A	IeEA	.	140	33	:584	)!
+'B	IeEA	.	140	40	:585	)"
+'C	IeEA	.	140	45	:586	)#
+'D	IeEA	.	140	45	:587	)$
+'E	IeEA	.	140	54	:588	)%
+'F	IeEA	.	140	54	:589	)&
+'G	IeEA	.	140	6	:590	)'
+'H	IeEA	.	141	12	:591	)(
+'I	IeEA	.	141	18	:592	))
+'J	IeEA	.	141	24	:593	)*
+'K	IeEA	.	141	24	:594	)+
+'L	IeEA	.	141	31	:595	),
+'M	IeEA	.	141	39	:596	)-
+'N	IeEA	.	141	39	:597	).
+'O	IeEA	.	141	6	:598	)/
+'P	IeEA	.	142	12	:599	)0
+'Q	IeEA	.	142	20	:600	)1
+'R	IeEA	.	142	20	:601	)2
+'S	IeEA	.	142	28	:602	)3
+'T	IeEA	.	142	35	:603	)4
+'U	IeEA	.	142	6	:604	)5
+'V	IeEA	.	143	13	:605	)6
+'W	IeEA	.	143	13	:606	)7
+'X	IeEA	.	143	13	:607	)8
+'Y	IeEA	.	143	20	:608	)9
+'Z	IeEA	.	143	26	:609	):
+'[	IeEA	.	143	34	:610	);
+'\	IeEA	.	143	34	:611	)<
+']	IeEA	.	143	6	:612	)=
+'^	IeEA	.	144	13	:613	)>
+'_	IeEA	.	144	13	:614	)?
+'`	IeEA	.	144	13	:615	)@
+'a	IeEA	.	144	20	:616	)A
+'b	IeEA	.	144	26	:617	)B
+'c	IeEA	.	144	34	:618	)C
+'d	IeEA	.	144	34	:619	)D
+'e	IeEA	.	144	6	:620	)E
+'f	IeEA	.	145	13	:621	)F
+'g	IeEA	.	145	13	:622	)G
+'h	IeEA	.	145	19	:623	)H
+'i	IeEA	.	145	27	:624	)I
+'j	IeEA	.	145	27	:625	)J
+'k	IeEA	.	145	6	:626	)K
+'l	IeEA	.	146	12	:627	)L
+'m	IeEA	.	146	12	:628	)M
+'n	IeEA	.	146	19	:629	)N
+'o	IeEA	.	146	25	:630	)O
+'p	IeEA	.	146	33	:631	)P
+'q	IeEA	.	146	33	:632	)Q
+'r	IeEA	.	146	6	:633	)R
+'s	IeEA	.	147	12	:634	)S
+'t	IeEA	.	147	18	:635	)T
+'u	IeEA	.	147	18	:636	)U
+'v	IeEA	.	147	25	:637	)V
+'w	IeEA	.	147	25	:638	)W
+'x	IeEA	.	147	32	:639	)X
+'y	IeEA	.	147	40	:640	)Y
+'z	IeEA	.	147	40	:641	)Z
+'{	IeEA	.	147	6	:642	)[
+'|	IeEA	.	148	6	:643	)\
+'}	IeEA	.	149	16	:644	)]
+'~	IeEA	.	61	9	:69	#R
+(!	IeEA	.	61	15	:70	#S
+("	IeEA	.	61	15	:71	#T
+(#	IeEA	.	61	22	:72	#U
+($	IeEA	.	61	28	:73	#V
+(%	IeEA	.	61	28	:74	#W
+(&	IeEA	.	61	35	:75	#X
+('	IeEA	.	61	40	:76	#Y
+((	IeEA	.	61	40	:77	#Z
+()	IeEA	.	61	49	:78	#[
+(*	IeEA	.	61	49	:79	#\
+(+	IeEA	.	62	12	:80	#]
+(,	IeEA	.	62	18	:81	#^
+(-	IeEA	.	62	24	:82	#_
+(.	IeEA	.	62	24	:83	#`
+(/	IeEA	.	62	31	:84	#a
+(0	IeEA	.	62	39	:85	#b
+(1	IeEA	.	62	39	:86	#c
+(2	IeEA	.	62	6	:87	#d
+(3	IeEA	.	63	12	:88	#e
+(4	IeEA	.	63	20	:89	#f
+(5	IeEA	.	63	20	:90	#g
+(6	IeEA	.	63	28	:91	#h
+(7	IeEA	.	63	35	:92	#i
+(8	IeEA	.	63	6	:93	#j
+(9	IeEA	.	60	14	:94	#k
+(:	IeEA	.	64	14	:95	#l
+(;	IeEA	.	69	9	:96	#m
+(<	IeEA	.	69	17	:97	#n
+(=	IeEA	.	69	23	:98	#o
+(>	IeEA	.	69	23	:99	#p
+(?	IeEA	.	52	1	basic_tri	#P
+(@	IeEA	.	54	1	casram_tri	#Q
+(A	IeEA	.	48	1	charom_tri	#N
+(B	IeEA	.	44	1	io_tri	#L
+(C	IeEA	.	50	1	kernal_tri	#O
+(D	IeEA	.	46	1	ramrw_tri	#M
+(E	IeEA	.	40	1	romh_tri	#J
+(F	IeEA	.	42	1	roml_tri	#K
+(G	Q<Im	.	148	6	1	'	1	~643~1	5p
+(H	Q<Im	.	148	6	1	'	1	~643~2	5t

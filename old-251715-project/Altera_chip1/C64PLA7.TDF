@@ -1,0 +1,151 @@
+ % File created by PASM2TDF Version 1.1 Sep 22 1993 %
+TITLE "c64pla7" ;
+% chip   c64pla   f100; %
+% ;pinlist (highest pin number = 28) %
+% ;pla chip in old version of commodore 64 %
+
+
+SUBDESIGN c64pla7
+(
+fe : INPUT ;
+a13 : INPUT ;
+a14 : INPUT ;
+a15 : INPUT ;
+va14 : INPUT ;
+charen : INPUT ;
+hiram : INPUT ;
+loram : INPUT ;
+cas : INPUT ;
+romh : OUTPUT;
+roml : OUTPUT;
+io : OUTPUT;
+ramrw : OUTPUT;
+charom : OUTPUT;
+kernal : OUTPUT;
+basic : OUTPUT;
+casram : OUTPUT;
+xoe : INPUT ;
+va12 : INPUT ;
+va13 : INPUT ;
+game : INPUT ;
+exrom : INPUT ;
+rw : INPUT ;
+aec : INPUT ;
+ba : INPUT ;
+a12 : INPUT ;
+)
+
+VARIABLE 
+romh : NODE ;
+romh_tri : TRI ;
+roml : NODE ;
+roml_tri : TRI ;
+io : NODE ;
+io_tri : TRI ;
+ramrw : NODE ;
+ramrw_tri : TRI ;
+charom : NODE ;
+charom_tri : TRI ;
+kernal : NODE ;
+kernal_tri : TRI ;
+basic : NODE ;
+basic_tri : TRI ;
+casram : NODE ;
+casram_tri : TRI ;
+
+
+BEGIN
+
+ romh = romh_tri.out ;
+ romh_tri.in	= !(
+ (hiram & a15 & !a14 & a13 & !aec & rw & !exrom & !game 
+     # a15 & a14 & a13 & !aec & exrom & !game 
+     # aec & exrom & !game & va13 & va12)  );
+ romh_tri.oe	=
+ (!xoe)  ;
+
+ roml = roml_tri.out ;
+ roml_tri.in	= !(
+ (loram & hiram & a15 & !a14 & !a13 & !aec & rw & !exrom 
+     # a15 & !a14 & !a13 & !aec & exrom & !game)  );
+ roml_tri.oe	=
+ (!xoe)  ;
+
+ io = io_tri.out ;
+ io_tri.in	= !(
+ (hiram & charen & a15 & a14 & !a13 & a12 & ba & !aec & rw & game 
+     # hiram & charen & a15 & a14 & !a13 & a12 & !aec & !rw & game 
+     # loram & charen & a15 & a14 & !a13 & a12 & ba & !aec & rw & game 
+     # loram & charen & a15 & a14 & !a13 & a12 & !aec & !rw & game 
+     # hiram & charen & a15 & a14 & !a13 & a12 & ba & !aec & rw & !exrom & !game 
+     # hiram & charen & a15 & a14 & !a13 & a12 & !aec & !rw & !exrom & !game 
+     # loram & charen & a15 & a14 & !a13 & a12 & ba & !aec & rw & !exrom & !game 
+     # loram & charen & a15 & a14 & !a13 & a12 & !aec & !rw & !exrom & !game 
+     # a15 & a14 & !a13 & a12 & ba & !aec & rw & exrom & !game 
+     # a15 & a14 & !a13 & a12 & !aec & !rw & exrom & !game)  );
+ io_tri.oe	=
+ (!xoe)  ;
+
+ ramrw = ramrw_tri.out ;
+ ramrw_tri.in	= !(
+ (!rw & !aec)  ) ;
+ ramrw_tri.oe	=
+ (!xoe)  ;
+
+ charom = charom_tri.out ;
+ charom_tri.in	= !(
+ (hiram & !charen & a15 & a14 & !a13 & a12 & !aec & rw & game 
+     # loram & !charen & a15 & a14 & !a13 & a12 & !aec & rw & game 
+     # hiram & !charen & a15 & a14 & !a13 & a12 & !aec & rw & !exrom & !game 
+     # va14 & aec & game & !va13 & va12
+     # va14 & aec & !exrom & !game & !va13 & va12)  );
+ charom_tri.oe	=
+ (!xoe)  ;
+
+ kernal = kernal_tri.out ;
+ kernal_tri.in	= !(
+ (hiram & a15 & a14 & a13 & !aec & rw & game 
+     # hiram & a15 & a14 & a13 & !aec & rw & !exrom & !game)  );
+ kernal_tri.oe	=
+ (!xoe)  ;
+
+ basic = basic_tri.out ;
+ basic_tri.in	= !(
+ (loram & hiram & a15 & !a14 & a13 & !aec & rw & game)  );
+ basic_tri.oe	=
+ (!xoe)  ;
+
+ casram = casram_tri.out ;
+ casram_tri.in	= (
+ (loram & hiram & a15 & !a14 & a13 & !aec & rw & game 
+     # hiram & a15 & a14 & a13 & !aec & rw & game 
+     # hiram & a15 & a14 & a13 & !aec & rw & !exrom & !game 
+     # hiram & !charen & a15 & a14 & !a13 & a12 & !aec & rw & game 
+     # loram & !charen & a15 & a14 & !a13 & a12 & !aec & rw & game 
+     # hiram & !charen & a15 & a14 & !a13 & a12 & !aec & rw & !exrom & !game 
+     # va14 & aec & game & !va13 & va12 
+     # va14 & aec & !exrom & !game & !va13 & va12 
+     # hiram & charen & a15 & a14 & !a13 & a12 & ba & !aec & rw & game 
+     # hiram & charen & a15 & a14 & !a13 & a12 & !aec & !rw & game 
+     # loram & charen & a15 & a14 & !a13 & a12 & ba & !aec & rw & game 
+     # loram & charen & a15 & a14 & !a13 & a12 & !aec & !rw & game 
+     # hiram & charen & a15 & a14 & !a13 & a12 & ba & !aec & rw & !exrom & !game 
+     # hiram & charen & a15 & a14 & !a13 & a12 & !aec & !rw & !exrom & !game 
+     # loram & charen & a15 & a14 & !a13 & a12 & ba & !aec & rw & !exrom & !game 
+     # loram & charen & a15 & a14 & !a13 & a12 & !aec & !rw & !exrom & !game 
+     # a15 & a14 & !a13 & a12 & ba & !aec & rw & exrom & !game 
+     # a15 & a14 & !a13 & a12 & !aec & !rw & exrom & !game 
+     # loram & hiram & a15 & !a14 & !a13 & !aec & rw & !exrom 
+     # a15 & !a14 & !a13 & !aec & exrom & !game 
+     # hiram & a15 & !a14 & a13 & !aec & rw & !exrom & !game 
+     # a15 & a14 & a13 & !aec & exrom & !game 
+     # aec & exrom & !game & va13 & va12 
+     # !a15 & !a14 & a12 & exrom & !game 
+     # !a15 & !a14 & a13 & exrom & !game 
+     # !a15 & a14 & exrom & !game 
+     # a15 & !a14 & a13 & exrom & !game 
+     # a15 & a14 & !a13 & !a12 & exrom & !game 
+     # cas)  );
+ casram_tri.oe	=
+ (!xoe)  ;
+END ;

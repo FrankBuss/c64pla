@@ -1,0 +1,6 @@
+JCF002
+
+[JTAG_CHAIN]
+DEVICE_1=EPM7032S
+DEVICE_2=EPM7032S c:\max2work\project\251715\chip2\251715_v7b.pof
+

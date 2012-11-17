@@ -1,0 +1,702 @@
+Project Information            c:\max2work\project\251715\chip2\251715_v7b.rpt
+
+MAX+plus II Compiler Report File
+Version 10.2 07/10/2002
+Compiled: 02/22/2003 15:02:01
+
+Copyright (C) 1988-2002 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input   Output   Bidir         Shareable
+POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
+
+251715_v7b
+      EPM7032SLC44-10      12       8        9      27      0           84 %
+
+User Pins:                 12       8        9  
+
+
+
+Project Information            c:\max2work\project\251715\chip2\251715_v7b.rpt
+
+** AUTO GLOBAL SIGNALS **
+
+
+
+INFO: Signal 'clock' chosen for auto global Clock
+
+
+Project Information            c:\max2work\project\251715\chip2\251715_v7b.rpt
+
+** PIN/LOCATION/CHIP ASSIGNMENTS **
+
+                  Actual                  
+    User       Assignments                
+Assignments   (if different)     Node Name
+
+251715_v7b@24                     aec
+251715_v7b@31                     a0
+251715_v7b@33                     a1
+251715_v7b@34                     a2
+251715_v7b@36                     a3
+251715_v7b@37                     a8
+251715_v7b@39                     a9
+251715_v7b@40                     a10
+251715_v7b@41                     a11
+251715_v7b@44                     _cas
+251715_v7b@19                     _cia1
+251715_v7b@9                      _cia2
+251715_v7b@2                      clock
+251715_v7b@11                     _colram
+251715_v7b@1                      _io
+251715_v7b@29                     _i/o1
+251715_v7b@28                     _i/o2
+251715_v7b@14                     ma0
+251715_v7b@18                     ma1
+251715_v7b@16                     ma2
+251715_v7b@12                     ma3
+251715_v7b@17                     ma7
+251715_v7b@5                      nmi
+251715_v7b@43                     _ras
+251715_v7b@6                      restore
+251715_v7b@27                     _sid
+251715_v7b@26                     va7
+251715_v7b@8                      _va15
+251715_v7b@25                     _vic
+
+
+Project Information            c:\max2work\project\251715\chip2\251715_v7b.rpt
+
+** FILE HIERARCHY **
+
+
+
+|freqdiv:1|
+|freqdiv:2|
+|7474:3|
+|74257:11|
+|74373:12|
+|74139:13|
+|74258:14|
+
+
+Device-Specific Information:   c:\max2work\project\251715\chip2\251715_v7b.rpt
+251715_v7b
+
+***** Logic for device '251715_v7b' compiled without errors.
+
+
+
+
+Device: EPM7032SLC44-10
+
+Device Options:
+    Turbo Bit                                    = ON
+    Security Bit                                 = OFF
+    Enable JTAG Support                        = ON
+    User Code                                  = ffff
+
+                    R                          
+              r     E                          
+              e     S                          
+              s     E     c                    
+              t     R     l     _  _           
+              o  n  V  V  o  _  c  r  G  a  a  
+              r  m  E  C  c  i  a  a  N  1  1  
+              e  i  D  C  k  o  s  s  D  1  0  
+            -----------------------------------_ 
+          /   6  5  4  3  2  1 44 43 42 41 40   | 
+    #TDI |  7                                39 | a9 
+   _va15 |  8                                38 | #TDO 
+   _cia2 |  9                                37 | a8 
+     GND | 10                                36 | a3 
+ _colram | 11                                35 | VCC 
+     ma3 | 12        EPM7032SLC44-10         34 | a2 
+    #TMS | 13                                33 | a1 
+     ma0 | 14                                32 | #TCK 
+     VCC | 15                                31 | a0 
+     ma2 | 16                                30 | GND 
+     ma7 | 17                                29 | _i/o1 
+         |_  18 19 20 21 22 23 24 25 26 27 28  _| 
+           ------------------------------------ 
+              m  _  R  R  G  V  a  _  v  _  _  
+              a  c  E  E  N  C  e  v  a  s  i  
+              1  i  S  S  D  C  c  i  7  i  /  
+                 a  E  E           c     d  o  
+                 1  R  R                    2  
+                    V  V                       
+                    E  E                       
+                    D  D                       
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCC = Dedicated power pin, which MUST be connected to VCC.
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+^ = Dedicated configuration pin.
++ = Reserved configuration pin, which is tri-stated during user mode.
+* = Reserved configuration pin, which drives out in user mode.
+PDn = Power Down pin. 
+@ = Special-purpose pin. 
+# = JTAG Boundary-Scan Testing/In-System Programming or Configuration Pin. The JTAG inputs TMS and TDI should be tied to VCC and TCK should be tied to GND when not in use.
+& = JTAG pin used for I/O. When used as user I/O, JTAG pins must be kept stable before and during configuration.  JTAG pin stability prevents accidental loading of JTAG instructions.
+
+
+Device-Specific Information:   c:\max2work\project\251715\chip2\251715_v7b.rpt
+251715_v7b
+
+** RESOURCE USAGE **
+
+                                                Shareable     External
+Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
+
+A:     LC1 - LC16    16/16(100%)  13/16( 81%)   0/16(  0%)  23/36( 63%) 
+B:    LC17 - LC32    11/16( 68%)  16/16(100%)   0/16(  0%)  17/36( 47%) 
+
+
+Total dedicated input pins used:                 4/4      (100%)
+Total I/O pins used:                            29/32     ( 90%)
+Total logic cells used:                         27/32     ( 84%)
+Total shareable expanders used:                  0/32     (  0%)
+Total Turbo logic cells used:                   27/32     ( 84%)
+Total shareable expanders not available (n/a):   0/32     (  0%)
+Average fan-in:                                  4.25
+Total fan-in:                                   115
+
+Total input pins required:                      12
+Total fast input logic cells required:           0
+Total output pins required:                      8
+Total bidirectional pins required:               9
+Total reserved pins required                     4
+Total logic cells required:                     27
+Total flipflops required:                        9
+Total product terms required:                   55
+Total logic cells lending parallel expanders:    0
+Total shareable expanders in database:           0
+
+Synthesized logic cells:                         2/  32   (  6%)
+
+
+
+Device-Specific Information:   c:\max2work\project\251715\chip2\251715_v7b.rpt
+251715_v7b
+
+** INPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  24   (32)  (B)      INPUT               0      0   0    0    0    1    2  aec
+  31     26    B      BIDIR               0      0   0    1    2    1    0  a0
+  33     24    B      BIDIR               0      0   0    1    2    1    0  a1
+  34     23    B      BIDIR               0      0   0    1    2    1    0  a2
+  36     22    B      BIDIR               0      0   0    1    2    1    0  a3
+  37   (21)  (B)      INPUT               0      0   0    0    0    5    0  a8
+  39   (19)  (B)      INPUT               0      0   0    0    0    5    0  a9
+  40   (18)  (B)      INPUT               0      0   0    0    0    8    0  a10
+  41   (17)  (B)      INPUT               0      0   0    0    0    8    0  a11
+  44      -   -       INPUT               0      0   0    0    0    5    0  _cas
+   2      -   -       INPUT  G            0      0   0    0    0    0    0  clock
+   1      -   -       INPUT               0      0   0    0    0    7    0  _io
+  14     10    A      BIDIR               0      0   0    3    0    1    0  ma0
+  18     13    A      BIDIR               0      0   0    3    0    1    0  ma1
+  16     11    A      BIDIR               0      0   0    3    0    1    0  ma2
+  12      8    A      BIDIR               0      0   0    3    0    1    0  ma3
+  17     12    A      BIDIR               0      0   0    3    0    0    0  ma7
+  43      -   -       INPUT               0      0   0    0    0    4    0  _ras
+   6    (3)  (A)      INPUT               0      0   0    0    0    1    8  restore
+  26   (30)  (B)      INPUT               0      0   0    0    0    1    0  va7
+   8    (5)  (A)      INPUT               0      0   0    0    0    1    0  _va15
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+G = Global Source. Fan-out destinations counted here do not include destinations
+that are driven using global routing resources. Refer to the Auto Global Signals,
+Clock Signals, Clear Signals, Synchronous Load Signals, and Synchronous Clear Signals
+Sections of this Report File for information on which signals' fan-outs are used as
+Clock, Clear, Preset, Output Enable, and synchronous Load signals.
+
+
+Device-Specific Information:   c:\max2work\project\251715\chip2\251715_v7b.rpt
+251715_v7b
+
+** OUTPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  31     26    B        TRI      t        0      0   0    1    2    1    0  a0
+  33     24    B        TRI      t        0      0   0    1    2    1    0  a1
+  34     23    B        TRI      t        0      0   0    1    2    1    0  a2
+  36     22    B        TRI      t        0      0   0    1    2    1    0  a3
+  19     14    A     OUTPUT      t        0      0   0    5    0    0    0  _cia1
+   9      6    A     OUTPUT      t        0      0   0    5    0    0    0  _cia2
+  11      7    A     OUTPUT      t        0      0   0    4    1    0    0  _colram
+  29     27    B     OUTPUT      t        0      0   0    5    0    0    0  _i/o1
+  28     28    B     OUTPUT      t        0      0   0    5    0    0    0  _i/o2
+  14     10    A        TRI      t        0      0   0    3    0    1    0  ma0
+  18     13    A        TRI      t        0      0   0    3    0    1    0  ma1
+  16     11    A        TRI      t        0      0   0    3    0    1    0  ma2
+  12      8    A        TRI      t        0      0   0    3    0    1    0  ma3
+  17     12    A        TRI      t        0      0   0    3    0    0    0  ma7
+   5      2    A         FF      t        0      0   0    1    5    0    1  nmi (|freqdiv:2|:24)
+  27     29    B     OUTPUT      t        0      0   0    3    0    0    0  _sid
+  25     31    B     OUTPUT      t        0      0   0    3    0    0    0  _vic
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:   c:\max2work\project\251715\chip2\251715_v7b.rpt
+251715_v7b
+
+** BURIED LOGIC **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+ (41)    17    B       SOFT    s t        0      0   0    1    0    1    0  aec~1
+ (39)    19    B       SOFT    s t        0      0   0    1    0    0    0  aec~2
+ (21)    16    A       TFFE   +  t        0      0   0    1    1    0    3  |freqdiv:1|DV2 (|freqdiv:1|:21)
+  (8)     5    A       TFFE   +  t        0      0   0    1    2    0    2  |freqdiv:1|DV4 (|freqdiv:1|:22)
+ (13)     9    A       TFFE   +  t        0      0   0    1    3    0    1  |freqdiv:1|DV8 (|freqdiv:1|:23)
+  (7)     4    A       TFFE   +  t        0      0   0    1    4    1    3  |freqdiv:1|DV16 (|freqdiv:1|:24)
+  (6)     3    A       TFFE      t        0      0   0    1    2    1    2  |freqdiv:2|DV2 (|freqdiv:2|:21)
+  (4)     1    A       TFFE      t        0      0   0    1    3    1    1  |freqdiv:2|DV4 (|freqdiv:2|:22)
+ (20)    15    A       TFFE      t        0      0   0    1    4    1    0  |freqdiv:2|DV8 (|freqdiv:2|:23)
+ (40)    18    B       DFFE      t        0      0   0    1    1    1    7  |7474:3|1Q (|7474:3|:9)
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:   c:\max2work\project\251715\chip2\251715_v7b.rpt
+251715_v7b
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'A':
+
+                                         Logic cells placed in LAB 'A'
+        +------------------------------- LC14 _cia1
+        | +----------------------------- LC6 _cia2
+        | | +--------------------------- LC7 _colram
+        | | | +------------------------- LC16 |freqdiv:1|DV2
+        | | | | +----------------------- LC5 |freqdiv:1|DV4
+        | | | | | +--------------------- LC9 |freqdiv:1|DV8
+        | | | | | | +------------------- LC4 |freqdiv:1|DV16
+        | | | | | | | +----------------- LC3 |freqdiv:2|DV2
+        | | | | | | | | +--------------- LC1 |freqdiv:2|DV4
+        | | | | | | | | | +------------- LC15 |freqdiv:2|DV8
+        | | | | | | | | | | +----------- LC10 ma0
+        | | | | | | | | | | | +--------- LC13 ma1
+        | | | | | | | | | | | | +------- LC11 ma2
+        | | | | | | | | | | | | | +----- LC8 ma3
+        | | | | | | | | | | | | | | +--- LC12 ma7
+        | | | | | | | | | | | | | | | +- LC2 nmi
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'A'
+LC      | | | | | | | | | | | | | | | | | A B |     Logic cells that feed LAB 'A':
+LC16 -> - - - * * * * - - - - - - - - - | * - | <-- |freqdiv:1|DV2
+LC5  -> - - - - * * * - - - - - - - - - | * - | <-- |freqdiv:1|DV4
+LC9  -> - - - - - * * - - - - - - - - - | * - | <-- |freqdiv:1|DV8
+LC4  -> - - - - - - * * * * - - - - - * | * - | <-- |freqdiv:1|DV16
+LC3  -> - - - - - - - * * * - - - - - * | * - | <-- |freqdiv:2|DV2
+LC1  -> - - - - - - - - * * - - - - - * | * - | <-- |freqdiv:2|DV4
+LC15 -> - - - - - - - - - * - - - - - * | * - | <-- |freqdiv:2|DV8
+
+Pin
+24   -> - - * - - - - - - - - - - - - - | * * | <-- aec
+31   -> - - - - - - - - - - * - - - - - | * - | <-- a0
+33   -> - - - - - - - - - - - * - - - - | * - | <-- a1
+34   -> - - - - - - - - - - - - * - - - | * - | <-- a2
+36   -> - - - - - - - - - - - - - * - - | * - | <-- a3
+37   -> * * - - - - - - - - * - - - - - | * * | <-- a8
+39   -> * * - - - - - - - - - * - - - - | * * | <-- a9
+40   -> * * * - - - - - - - - - * - - - | * * | <-- a10
+41   -> * * * - - - - - - - - - - * - - | * * | <-- a11
+44   -> - - - - - - - - - - * * * * * - | * - | <-- _cas
+2    -> - - - - - - - - - - - - - - - - | - - | <-- clock
+1    -> * * * - - - - - - - - - - - - - | * * | <-- _io
+43   -> - - - - - - - - - - - - - - - - | - * | <-- _ras
+6    -> - - - * * * * * * * - - - - - * | * * | <-- restore
+26   -> - - - - - - - - - - - - - - * - | * - | <-- va7
+8    -> - - - - - - - - - - - - - - * - | * - | <-- _va15
+LC17 -> - - * - - - - - - - - - - - - - | * - | <-- aec~1
+LC18 -> - - - * * * * * * * - - - - - * | * - | <-- |7474:3|1Q
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:   c:\max2work\project\251715\chip2\251715_v7b.rpt
+251715_v7b
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'B':
+
+                               Logic cells placed in LAB 'B'
+        +--------------------- LC17 aec~1
+        | +------------------- LC19 aec~2
+        | | +----------------- LC26 a0
+        | | | +--------------- LC24 a1
+        | | | | +------------- LC23 a2
+        | | | | | +----------- LC22 a3
+        | | | | | | +--------- LC27 _i/o1
+        | | | | | | | +------- LC28 _i/o2
+        | | | | | | | | +----- LC29 _sid
+        | | | | | | | | | +--- LC31 _vic
+        | | | | | | | | | | +- LC18 |7474:3|1Q
+        | | | | | | | | | | | 
+        | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | |   that feed LAB 'B'
+LC      | | | | | | | | | | | | A B |     Logic cells that feed LAB 'B':
+LC26 -> - - * - - - - - - - - | - * | <-- a0
+LC24 -> - - - * - - - - - - - | - * | <-- a1
+LC23 -> - - - - * - - - - - - | - * | <-- a2
+LC22 -> - - - - - * - - - - - | - * | <-- a3
+
+Pin
+24   -> * * - - - - - - - - - | * * | <-- aec
+37   -> - - - - - - * * - - - | * * | <-- a8
+39   -> - - - - - - * * - - - | * * | <-- a9
+40   -> - - - - - - * * * * - | * * | <-- a10
+41   -> - - - - - - * * * * - | * * | <-- a11
+44   -> - - - - - - - - - - - | * - | <-- _cas
+2    -> - - - - - - - - - - - | - - | <-- clock
+1    -> - - - - - - * * * * - | * * | <-- _io
+43   -> - - * * * * - - - - - | - * | <-- _ras
+6    -> - - - - - - - - - - * | * * | <-- restore
+LC10 -> - - * - - - - - - - - | - * | <-- ma0
+LC13 -> - - - * - - - - - - - | - * | <-- ma1
+LC11 -> - - - - * - - - - - - | - * | <-- ma2
+LC8  -> - - - - - * - - - - - | - * | <-- ma3
+LC2  -> - - - - - - - - - - * | - * | <-- nmi
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:   c:\max2work\project\251715\chip2\251715_v7b.rpt
+251715_v7b
+
+** EQUATIONS **
+
+aec      : INPUT;
+a8       : INPUT;
+a9       : INPUT;
+a10      : INPUT;
+a11      : INPUT;
+clock    : INPUT;
+restore  : INPUT;
+va7      : INPUT;
+_cas     : INPUT;
+_io      : INPUT;
+_ras     : INPUT;
+_va15    : INPUT;
+
+-- Node name is 'aec~1' 
+-- Equation name is 'aec~1', location is LC017, type is buried.
+-- synthesized logic cell 
+_LC017   = LCELL( aec $  GND);
+
+-- Node name is 'aec~2' 
+-- Equation name is 'aec~2', location is LC019, type is buried.
+-- synthesized logic cell 
+_LC019   = LCELL( aec $  GND);
+
+-- Node name is 'a0' = '|74373:12|:12' 
+-- Equation name is 'a0', type is bidir 
+a0       = TRI(_LC026, !_LC019);
+_LC026   = LCELL( _EQ001 $  GND);
+  _EQ001 =  ma0 &  _ras
+         #  _LC026 &  ma0
+         #  _LC026 & !_ras;
+
+-- Node name is 'a1' = '|74373:12|:13' 
+-- Equation name is 'a1', type is bidir 
+a1       = TRI(_LC024, !_LC019);
+_LC024   = LCELL( _EQ002 $  GND);
+  _EQ002 =  ma1 &  _ras
+         #  _LC024 &  ma1
+         #  _LC024 & !_ras;
+
+-- Node name is 'a2' = '|74373:12|:14' 
+-- Equation name is 'a2', type is bidir 
+a2       = TRI(_LC023, !_LC019);
+_LC023   = LCELL( _EQ003 $  GND);
+  _EQ003 =  ma2 &  _ras
+         #  _LC023 &  ma2
+         #  _LC023 & !_ras;
+
+-- Node name is 'a3' = '|74373:12|:15' 
+-- Equation name is 'a3', type is bidir 
+a3       = TRI(_LC022, !_LC019);
+_LC022   = LCELL( _EQ004 $  GND);
+  _EQ004 =  ma3 &  _ras
+         #  _LC022 &  ma3
+         #  _LC022 & !_ras;
+
+-- Node name is 'ma0' 
+-- Equation name is 'ma0', location is LC010, type is bidir.
+ma0      = TRI(_LC010,  _LC017);
+_LC010   = LCELL( _EQ005 $  GND);
+  _EQ005 =  a0 &  _cas
+         #  a8 & !_cas;
+
+-- Node name is 'ma1' 
+-- Equation name is 'ma1', location is LC013, type is bidir.
+ma1      = TRI(_LC013,  _LC017);
+_LC013   = LCELL( _EQ006 $  GND);
+  _EQ006 =  a1 &  _cas
+         #  a9 & !_cas;
+
+-- Node name is 'ma2' 
+-- Equation name is 'ma2', location is LC011, type is bidir.
+ma2      = TRI(_LC011,  _LC017);
+_LC011   = LCELL( _EQ007 $  GND);
+  _EQ007 =  a2 &  _cas
+         #  a10 & !_cas;
+
+-- Node name is 'ma3' 
+-- Equation name is 'ma3', location is LC008, type is bidir.
+ma3      = TRI(_LC008,  _LC017);
+_LC008   = LCELL( _EQ008 $  GND);
+  _EQ008 =  a3 &  _cas
+         #  a11 & !_cas;
+
+-- Node name is 'ma7' 
+-- Equation name is 'ma7', location is LC012, type is bidir.
+ma7      = TRI(_LC012, !_LC019);
+_LC012   = LCELL( _EQ009 $  VCC);
+  _EQ009 =  _cas & !va7
+         # !_cas &  _va15;
+
+-- Node name is 'nmi' = '|freqdiv:2|DV16' 
+-- Equation name is 'nmi', type is output 
+ nmi     = TFFE( _EQ010,  _LC004,  restore,  VCC,  VCC);
+  _EQ010 =  _LC001 &  _LC003 &  _LC015 &  _LC018;
+
+-- Node name is '|freqdiv:1|:21' = '|freqdiv:1|DV2' 
+-- Equation name is '_LC016', type is buried 
+_LC016   = TFFE( _LC018, GLOBAL( clock),  restore,  VCC,  VCC);
+
+-- Node name is '|freqdiv:1|:22' = '|freqdiv:1|DV4' 
+-- Equation name is '_LC005', type is buried 
+_LC005   = TFFE( _EQ011, GLOBAL( clock),  restore,  VCC,  VCC);
+  _EQ011 =  _LC016 &  _LC018;
+
+-- Node name is '|freqdiv:1|:23' = '|freqdiv:1|DV8' 
+-- Equation name is '_LC009', type is buried 
+_LC009   = TFFE( _EQ012, GLOBAL( clock),  restore,  VCC,  VCC);
+  _EQ012 =  _LC005 &  _LC016 &  _LC018;
+
+-- Node name is '|freqdiv:1|:24' = '|freqdiv:1|DV16' 
+-- Equation name is '_LC004', type is buried 
+_LC004   = TFFE( _EQ013, GLOBAL( clock),  restore,  VCC,  VCC);
+  _EQ013 =  _LC005 &  _LC009 &  _LC016 &  _LC018;
+
+-- Node name is '|freqdiv:2|:21' = '|freqdiv:2|DV2' 
+-- Equation name is '_LC003', type is buried 
+_LC003   = TFFE( _LC018,  _LC004,  restore,  VCC,  VCC);
+
+-- Node name is '|freqdiv:2|:22' = '|freqdiv:2|DV4' 
+-- Equation name is '_LC001', type is buried 
+_LC001   = TFFE( _EQ014,  _LC004,  restore,  VCC,  VCC);
+  _EQ014 =  _LC003 &  _LC018;
+
+-- Node name is '|freqdiv:2|:23' = '|freqdiv:2|DV8' 
+-- Equation name is '_LC015', type is buried 
+_LC015   = TFFE( _EQ015,  _LC004,  restore,  VCC,  VCC);
+  _EQ015 =  _LC001 &  _LC003 &  _LC018;
+
+-- Node name is '|7474:3|:9' = '|7474:3|1Q' 
+-- Equation name is '_LC018', type is buried 
+_LC018   = DFFE( GND $  GND, !nmi,  VCC,  restore,  VCC);
+
+-- Node name is '_cia1' 
+-- Equation name is '_cia1', location is LC014, type is output.
+ _cia1   = LCELL( _EQ016 $  VCC);
+  _EQ016 = !a8 & !a9 &  a10 &  a11 & !_io;
+
+-- Node name is '_cia2' 
+-- Equation name is '_cia2', location is LC006, type is output.
+ _cia2   = LCELL( _EQ017 $  VCC);
+  _EQ017 =  a8 & !a9 &  a10 &  a11 & !_io;
+
+-- Node name is '_colram' 
+-- Equation name is '_colram', location is LC007, type is output.
+ _colram = LCELL( _EQ018 $  _LC017);
+  _EQ018 =  aec & !a10 &  a11 & !_io;
+
+-- Node name is '_i/o1' 
+-- Equation name is '_i/o1', location is LC027, type is output.
+ _i/o1   = LCELL( _EQ019 $  VCC);
+  _EQ019 = !a8 &  a9 &  a10 &  a11 & !_io;
+
+-- Node name is '_i/o2' 
+-- Equation name is '_i/o2', location is LC028, type is output.
+ _i/o2   = LCELL( _EQ020 $  VCC);
+  _EQ020 =  a8 &  a9 &  a10 &  a11 & !_io;
+
+-- Node name is '_sid' 
+-- Equation name is '_sid', location is LC029, type is output.
+ _sid    = LCELL( _EQ021 $  VCC);
+  _EQ021 =  a10 & !a11 & !_io;
+
+-- Node name is '_vic' 
+-- Equation name is '_vic', location is LC031, type is output.
+ _vic    = LCELL( _EQ022 $  VCC);
+  _EQ022 = !a10 & !a11 & !_io;
+
+
+
+--     Shareable expanders that are duplicated in multiple LABs:
+--     (none)
+
+
+
+
+Project Information            c:\max2work\project\251715\chip2\251715_v7b.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Standard
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'MAX7000S' family
+
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      PARALLEL_EXPANDERS                  = off
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SOFT_BUFFER_INSERTION               = on
+      SUBFACTOR_EXTRACTION                = on
+      TURBO_BIT                           = on
+      XOR_SYNTHESIS                       = on
+      IGNORE_SOFT_BUFFERS                 = off
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = off
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      One-Hot State Machine Encoding      = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = on
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+ADT PALACE Compilation                    = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:00
+   Database Builder                       00:00:00
+   Logic Synthesizer                      00:00:00
+   Partitioner                            00:00:00
+   Fitter                                 00:00:00
+   Timing SNF Extractor                   00:00:00
+   Assembler                              00:00:01
+   --------------------------             --------
+   Total Time                             00:00:01
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 3,043K

@@ -1,0 +1,182 @@
+NDB006
+The number of symbol table entries is: 8
+The length of the symbol table is: 90
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|freqdiv:1|
+:	|freqdiv:2|
+F	|7474:3|
+O	|74257:11|
+Z	|74373:12|
+e	|74139:13|
+p	|74258:14|
+
+The number of name info structs is : 163
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	IGdW	!	:15	#/
+#	IGdW	!	:16	#1
+$	IGdW	!	:18	#.
+%	IGdW	!	:4	#-
+&	IGdW	!	:7	#0
+'	(@>U^	!	5	>	?	@	A	B	_cas	|
+(	IGdq	!	_cia1	s
+)	IGdq	!	_cia2	r
+*	IGdq	!	_colram	v
++	IGdq	!	_i/o1	q
+,	IGdq	!	_i/o2	p
+-	(@>U^	!	7	(	)	*	+	,	/	1	_io	{
+.	(@>U^	!	4	2	3	6	7	_ras	x
+/	IGdq	!	_sid	t
+0	Ky&|	!	1	B	_va15	y
+1	IGdq	!	_vic	u
+2	Ky'!	!	2	>	2	a0	")
+3	Ky'!	!	2	3	?	a1	"(
+4	Ky&|	!	8	(	)	*	+	,	@	/	1	a10	"!
+5	Ky&|	!	8	(	)	*	+	,	A	/	1	a11	""
+6	Ky'!	!	2	@	6	a2	"'
+7	Ky'!	!	2	7	A	a3	"&
+8	Ky&|	!	5	(	)	+	,	>	a8	}
+9	Ky&|	!	5	(	)	+	,	?	a9	~
+:	Ky&|	!	3	;	<	*	aec	"#
+;	Kx(k	!	5	*	>	?	@	A	aec~1	+$
+<	Kx(k	!	5	B	7	6	3	2	aec~2	+'
+=	(@>U^	!	4	"S	"R	"Q	"P	clock	w
+>	Ky'!	!	1	2	ma0	"*
+?	Ky'!	!	1	3	ma1	"+
+@	Ky'!	!	1	6	ma2	",
+A	Ky'!	!	1	7	ma3	"-
+B	IGds	!	ma7	"%
+C	Ky&}	!	2	"N	C	nmi	o
+D	Ky&|	!	9	"P	"Q	"R	"S	"\	"]	"^	C	"N	restore	"$
+E	Ky&|	!	1	B	va7	z
+F	IGdW	e	:10	$~
+G	IGdW	e	:11	$}
+H	IGdW	e	:12	$|
+I	IGdW	e	:13	${
+J	IGdW	e	:14	$z
+K	IGdW	e	:15	$y
+L	IGdW	e	:16	$x
+M	IVOQ	e	X	:33	$p
+N	IVOQ	e	Y	:34	$q
+O	IVOQ	e	Z	:35	$r
+P	IVOQ	e	[	:36	$s
+Q	IVOQ	e	\	:37	$t
+R	IVOQ	e	]	:38	$u
+S	IVOQ	e	^	:39	$v
+T	IVOQ	e	_	:40	$w
+U	IGdW	e	:7	%#
+V	IGdW	e	:8	%"
+W	IGdW	e	:9	%!
+X	INu}	e	M	Y10N	$p
+Y	INu}	e	N	Y11N	$q
+Z	INu}	e	O	Y12N	$r
+[	INu}	e	P	Y13N	$s
+\	INu}	e	Q	Y20N	$t
+]	INu}	e	R	Y21N	$u
+^	INu}	e	S	Y22N	$v
+_	INu}	e	T	Y23N	$w
+`	IGdW	O	:18	$0
+a	IGdW	O	:2	$*
+b	IVOQ	O	r	:20	$4
+c	IGdW	O	:21	$/
+d	IVOQ	O	s	:22	$3
+e	IGdW	O	:25	$.
+f	IVOQ	O	t	:26	$2
+g	IVOQ	O	u	:29	$1
+h	IGdW	O	:30	$-
+i	IGdW	O	:31	$,
+j	IGdW	O	:32	$+
+k	IGdW	O	:33	$&
+l	IGdW	O	:34	$%
+m	IGdW	O	:35	$$
+n	IGdW	O	:36	$#
+o	IGdW	O	:4	$)
+p	IGdW	O	:6	$(
+q	IGdW	O	:8	$'
+r	INu}	O	b	Y1	$4
+s	INu}	O	d	Y2	$3
+t	INu}	O	f	Y3	$2
+u	INu}	O	g	Y4	$1
+v	IGdW	p	:2	%A
+w	IVOQ	p	"*	:20	%;
+x	IVOQ	p	"+	:22	%<
+y	IVOQ	p	",	:26	%=
+z	IVOQ	p	"-	:29	%>
+{	IGdW	p	:31	%:
+|	IGdW	p	:32	%9
+}	IGdW	p	:33	%8
+~	IGdW	p	:34	%7
+"!	IGdW	p	:35	%?
+""	IGdW	p	:36	%@
+"#	IGdW	p	:37	%E
+"$	IGdW	p	:38	%F
+"%	IGdW	p	:39	%G
+"&	IGdW	p	:4	%B
+"'	IGdW	p	:40	%H
+"(	IGdW	p	:6	%C
+")	IGdW	p	:8	%D
+"*	INu}	p	w	YN1	%;
+"+	INu}	p	x	YN2	%<
+",	INu}	p	y	YN3	%=
+"-	INu}	p	z	YN4	%>
+".	IGdW	Z	:1	$\
+"/	IGdG	Z	:12	$[
+"0	IGdG	Z	:13	$Z
+"1	IGdG	Z	:14	$Y
+"2	IGdG	Z	:15	$X
+"3	IGdG	Z	:16	$W
+"4	IGdG	Z	:17	$V
+"5	IGdG	Z	:18	$U
+"6	IGdG	Z	:19	$T
+"7	IVOQ	Z	"?	:67	$S
+"8	IVOQ	Z	"@	:68	$R
+"9	IVOQ	Z	"A	:69	$Q
+":	IVOQ	Z	"B	:70	$P
+";	IVOQ	Z	"C	:71	$O
+"<	IVOQ	Z	"D	:72	$N
+"=	IVOQ	Z	"E	:73	$M
+">	IVOQ	Z	"F	:74	$L
+"?	INu}	Z	"7	Q1	$S
+"@	INu}	Z	"8	Q2	$R
+"A	INu}	Z	"9	Q3	$Q
+"B	INu}	Z	":	Q4	$P
+"C	INu}	Z	";	Q5	$O
+"D	INu}	Z	"<	Q6	$N
+"E	INu}	Z	"=	Q7	$M
+"F	INu}	Z	">	Q8	$L
+"G	INvO	F	"N	1Q	#j
+"H	INu}	F	"M	1QN	#m
+"I	INum	F	"K	2Q	#k
+"J	INu}	F	"L	2QN	#l
+"K	IVOA	F	"I	:10	#k
+"L	IVOQ	F	"J	:15	#l
+"M	IVOQ	F	"H	:16	#m
+"N	L)p/	F	"G	8	"P	"Q	"R	"S	"\	"]	"^	C	:9	#j
+"O	IGdW	.	:20	#B
+"P	L)p/	.	"X	4	"Q	"R	"S	"P	:21	#A
+"Q	L)p/	.	"Y	3	"R	"S	"Q	:22	#@
+"R	L)p/	.	"Z	2	"S	"R	:23	#?
+"S	L)p/	.	"W	5	"\	"]	"^	C	"S	:24	#>
+"T	IGdW	.	:29	#E
+"U	IGdW	.	:30	#D
+"V	IGdW	.	:31	#C
+"W	INvO	.	"S	DV16	#>
+"X	INvO	.	"P	DV2	#A
+"Y	INvO	.	"Q	DV4	#@
+"Z	INvO	.	"R	DV8	#?
+"[	IGdW	:	:20	#V
+"\	L)p/	:	"d	4	"]	"^	C	"\	:21	#U
+"]	L)p/	:	"e	3	"^	C	"]	:22	#T
+"^	L)p/	:	"f	2	C	"^	:23	#S
+"_	IVOA	:	"c	:24	#R
+"`	IGdW	:	:29	#Y
+"a	IGdW	:	:30	#X
+"b	IGdW	:	:31	#W
+"c	INum	:	"_	DV16	#R
+"d	INvO	:	"\	DV2	#U
+"e	INvO	:	"]	DV4	#T
+"f	INvO	:	"^	DV8	#S

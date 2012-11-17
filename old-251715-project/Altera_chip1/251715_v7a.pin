@@ -1,0 +1,74 @@
+-- Copyright (C) 1988-2002 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCC = Dedicated power pin, which MUST be connected to VCC.
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+----------------------------------------------------------------------------
+
+CHIP "251715_v7a" ASSIGNED TO AN EPM7032SLC44-10
+a14                              : 1
+a15                              : 2
+VCC                              : 3
+r_w                              : 4
+_loram                           : 5
+_hiram                           : 6
+TDI                              : 7
+_charen                          : 8
+_va14                            : 9
+GND                              : 10
+_charom                          : 11
+_basic                           : 12
+TMS                              : 13
+_kernal                          : 14
+VCC                              : 15
+_casram                          : 16
+ma6                              : 17
+ma4                              : 18
+ma5                              : 19
+ma7                              : 20
+ramr_w                           : 21
+GND                              : 22
+VCC                              : 23
+_io                              : 24
+_cas                             : 25
+_ras                             : 26
+aec                              : 27
+ba                               : 28
+va6                              : 29
+GND                              : 30
+_romlo                           : 31
+TCK                              : 32
+_exrom                           : 33
+_game                            : 34
+VCC                              : 35
+_romh                            : 36
+a4                               : 37
+TDO                              : 38
+a5                               : 39
+a6                               : 40
+a7                               : 41
+GND                              : 42
+a13                              : 43
+a12                              : 44
