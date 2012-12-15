@@ -9,6 +9,7 @@ entity c64pla_251715 is
 		a14: in std_logic;
 		a15: in std_logic;
 		va14: in std_logic;
+		va15: in std_logic;
 		charen: in std_logic;
 		hiram: in std_logic;
 		loram: in std_logic;
@@ -32,9 +33,11 @@ entity c64pla_251715 is
 		ba: in std_logic;
 		a12: in std_logic;
 		vic: out std_logic;
-		ras: out std_logic;
+		ras: in std_logic;
 		va7: out std_logic;
 		va6: out std_logic;
+		ma7: out std_logic;
+		ma6: out std_logic;
 		ma5: out std_logic;
 		ma4: out std_logic;
 		ma3: out std_logic;
@@ -58,19 +61,24 @@ entity c64pla_251715 is
 		d3: in std_logic;
 		d4: in std_logic;
 		phi0: in std_logic;
+		io1: out std_logic;
 		io2: out std_logic;
 		cia1: out std_logic;
 		cia2: out std_logic;
 		nmi: out std_logic;
-		restore: in std_logic
+		restore: in std_logic;
+		colram: out std_logic;
+		sid: out std_logic
 	);
 end c64pla_251715;
 
 architecture rtl of c64pla_251715 is
 
+signal ioBuffer: std_logic;
+
 begin
 
-	process(fe, a13, a14, a15, va14, charen, hiram, loram, cas, xoe, va12, va13, game, exrom, rw, aec, ba, a12, vic, ras, va7, va6, ma0, ma1, ma2, ma3, ma4, ma5, a0, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, d1, d2, d3, d4, phi0, io2, cia1, cia2, nmi, restore)
+	process(fe, a13, a14, a15, va14, charen, hiram, loram, cas, xoe, va12, va13, game, exrom, rw, aec, ba, a12, a0, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, d1, d2, d3, d4, phi0, restore)
 	begin
 		if xoe = '1' then
 			romh <= 'Z';
@@ -215,31 +223,31 @@ begin
 				);
 			colram <= (
 				-- From 74373 and 74139
-				(a8 and io and a10 and a11)
+				(a8 and ioBuffer and a10 and a11)
 				);
 			vic <= (
 				-- From 74139
-				(a8 and io)
+				(a8 and ioBuffer)
 				);
 			sid <= (
 				-- From 74139
-				(a8 and io and a11)
+				(a8 and ioBuffer and a11)
 				);
 			cia1 <= (
 				-- From 74139
-				(a8 and io and a10)
+				(a8 and ioBuffer and a10)
 				);
 			cia2 <= (
 				-- From 74139
-				(a8 and io and a9)
+				(a8 and ioBuffer and a9)
 				);
 			io1 <= (
 				-- From 74139
-				(a8 and io and a9 and a10)
+				(a8 and ioBuffer and a9 and a10)
 				);
 			io2 <= (
 				-- From 74139
-				(a8 and io and a9 and a11 and 10)
+				(a8 and ioBuffer and a9 and a11 and a10)
 				);
 			ma7 <= (
 				-- From 74258

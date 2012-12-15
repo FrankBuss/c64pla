@@ -132,7 +132,7 @@
     </transform>
     <transform xil_pn:end_ts="1353157172" xil_pn:in_ck="-3873313530734778481" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8177779613099413825" xil_pn:start_ts="1353157172">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
@@ -145,76 +145,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1353758942" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="6002704211143055446" xil_pn:start_ts="1353758942">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1353758952" xil_pn:in_ck="-769654240509389473" xil_pn:name="TRANEXT_xstsynthesize_xc9500xl" xil_pn:prop_ck="699908875456781912" xil_pn:start_ts="1353758942">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Blinking.lso"/>
-      <outfile xil_pn:name="Blinking.ngc"/>
-      <outfile xil_pn:name="Blinking.ngr"/>
-      <outfile xil_pn:name="Blinking.prj"/>
-      <outfile xil_pn:name="Blinking.stx"/>
-      <outfile xil_pn:name="Blinking.syr"/>
-      <outfile xil_pn:name="Blinking.xst"/>
-      <outfile xil_pn:name="Blinking_vhdl.prj"/>
-      <outfile xil_pn:name="Blinking_xst.xrpt"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-      <outfile xil_pn:name="xst"/>
-    </transform>
     <transform xil_pn:end_ts="1353758952" xil_pn:in_ck="106370596137" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-5625762190929445125" xil_pn:start_ts="1353758952">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1353758959" xil_pn:in_ck="2773387961229858852" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="5717683746260188660" xil_pn:start_ts="1353758952">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Blinking.bld"/>
-      <outfile xil_pn:name="Blinking.ngd"/>
-      <outfile xil_pn:name="Blinking_ngdbuild.xrpt"/>
-      <outfile xil_pn:name="_ngo"/>
-      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
-    </transform>
-    <transform xil_pn:end_ts="1353758973" xil_pn:in_ck="-3165077909047990659" xil_pn:name="TRANEXT_vm6File_xc9500xl" xil_pn:prop_ck="-669448116408912312" xil_pn:start_ts="1353758959">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Blinking.gyd"/>
-      <outfile xil_pn:name="Blinking.mfd"/>
-      <outfile xil_pn:name="Blinking.nga"/>
-      <outfile xil_pn:name="Blinking.pad"/>
-      <outfile xil_pn:name="Blinking.pnx"/>
-      <outfile xil_pn:name="Blinking.rpt"/>
-      <outfile xil_pn:name="Blinking.tim"/>
-      <outfile xil_pn:name="Blinking.tspec"/>
-      <outfile xil_pn:name="Blinking.vm6"/>
-      <outfile xil_pn:name="Blinking.xml"/>
-      <outfile xil_pn:name="Blinking_build.xml"/>
-      <outfile xil_pn:name="Blinking_html"/>
-      <outfile xil_pn:name="Blinking_pad.csv"/>
-    </transform>
-    <transform xil_pn:end_ts="1353758976" xil_pn:in_ck="2118296459597285309" xil_pn:name="TRANEXT_crtProg_xc9500" xil_pn:prop_ck="-6294026017969277533" xil_pn:start_ts="1353758973">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Blinking.jed"/>
-    </transform>
-    <transform xil_pn:end_ts="1353758976" xil_pn:in_ck="-5301344028233360463" xil_pn:name="TRAN_configureTargetDevice_CPLD" xil_pn:prop_ck="-8241269930622138101" xil_pn:start_ts="1353758976">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="_impactbatch.log"/>
-      <outfile xil_pn:name="ise_impact.cmd"/>
-    </transform>
-    <transform xil_pn:end_ts="1353757945" xil_pn:in_ck="2118296459597285309" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1353757943">
-      <status xil_pn:value="AbortedRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
   </transforms>
 
