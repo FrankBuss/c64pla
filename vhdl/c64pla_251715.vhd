@@ -74,7 +74,7 @@ begin
 			cas => cas,
 			romh => romh,
 			roml => roml,
-			io => io,
+			io => ioBuffer,
 			ramrw => ramrw,
 			grw => open,
 			charom => charom,
@@ -184,5 +184,8 @@ begin
 	-- From chip2.pdf .. STOP
 		
 	end process;
+	
+	-- Connect the ioBuffer to the 'io' output pin..
+	io <= ioBuffer;
 
 end architecture rtl;
