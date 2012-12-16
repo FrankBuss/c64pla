@@ -57,6 +57,7 @@ end c64pla_251715;
 architecture rtl of c64pla_251715 is
 
 signal ioBuffer: std_logic;
+signal sideB: std_logic;
 
 begin
 
@@ -92,6 +93,8 @@ begin
 		);
 
 	process(a(0), a(1), a(2), a(3), a(4), a(5), a(6), a(7), a(8), a(9), a(10), a(11), phi0, restore)
+	subtype demuxA is std_logic_vector(1 downto 0);
+	subtype demuxB is std_logic_vector(1 downto 0);
 	begin
 	-- From chip1.pdf .. START 
 			ma(6) <= (
@@ -154,34 +157,26 @@ begin
 				-- From 74373
 				or (aec and a(0) and ras)
 				);
-			colram <= (
-				-- From 74373 and 74139
-				(a(8) and ioBuffer and a(10) and a(11))
-				);
-			vic <= (
-				-- From 74139
-				(a(8) and ioBuffer)
-				);
-			sid <= (
-				-- From 74139
-				(a(8) and ioBuffer and a(11))
-				);
-			cia1 <= (
-				-- From 74139
-				(a(8) and ioBuffer and a(10))
-				);
-			cia2 <= (
-				-- From 74139
-				(a(8) and ioBuffer and a(9))
-				);
-			io1 <= (
-				-- From 74139
-				(a(8) and ioBuffer and a(9) and a(10))
-				);
-			io2 <= (
-				-- From 74139
-				(a(8) and ioBuffer and a(9) and a(11) and a(10))
-				);
+				-- 74139 2->4 demux - Side 'A'
+				if ioBuffer = '0' then
+					case demuxA'(a(8) & a(10)) is
+						when "00" => vic <= '0';
+						when "01" => sid <= '0';
+						when "10" => colram <= aec;
+						when "11" => sideB <= '0';
+						when others => null;
+					end case;
+				end if;
+				-- 74139 2->4 demux - Side 'B'
+				if sideB = '0' then
+					case demuxB'(a(9) & a(11)) is
+						when "00" => cia1 <= '0';
+						when "01" => cia2 <= '0';
+						when "10" => io1 <= '0';
+						when "11" => io2 <= '0';
+						when others => null;
+					end case;
+				end if;
 			ma(7) <= (
 				-- From 74258
 				(aec and cas and va(15))
