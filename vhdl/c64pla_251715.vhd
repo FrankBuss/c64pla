@@ -160,8 +160,20 @@ begin
 			ma(7) <= (
 				(aec and cas and va(15))
 				);
+			
 			-- A direct mapping. Might work ok but might need additional logic.
 			nmi <= restore;
+			-- Define directions for outputs..
+			dir1 <= '1';
+			dir2 <= '1';
+			aux_dir <= '1';
+			-- Enable the voltage level shifters..
+			oe <= '0';
+			-- Avoid a few other warnings about un-connected signals at this time..
+			misc1 <= clk;
+			misc2 <= restore;
+			misc3 <= not clk;
+			
 	end process;
 	
 	-- Connect the ioBuffer to the 'io' output pin..
