@@ -96,65 +96,45 @@ begin
 	subtype demuxA is std_logic_vector(1 downto 0);
 	subtype demuxB is std_logic_vector(1 downto 0);
 	begin
-	-- From chip1.pdf .. START 
 			ma(6) <= (
-				-- From 74257
 				(cas and not aec and a(14))
 				or (cas and not aec and a(15))
-				-- From 74258
 				or (cas and aec and not va(14))
-				-- From 74373
 				or (aec and a(6) and ras)
 				);
 			ma(5) <= (
-			   -- From 74257
 			  (cas and not aec and a(13))
 			  or (cas and not aec and a(15))
-			  -- From 74373
 			  or (aec and a(5) and ras)
 			   );
 			ma(7) <= (
-			   -- From 74257
 				(cas and not aec and a(6))
 				or (cas and not aec and a(7))
-				-- From 74373
 				or (aec and a(7) and ras)
 			   );
 			ma(4) <= (
-				-- From 74257
 				(cas and not aec and a(7))
 				or (cas and not aec and a(5))
-				-- From 74373
 				or (aec and a(4) and ras)
 				);
-	-- From chip1.pdf .. STOP
-	-- From chip2.pdf .. START
 			ma(3) <= (
-				-- From 74257
 				(cas and not aec and a(11))
 				or (cas and not aec and a(9))
-				-- From 74373
 				or (aec and a(3) and ras)
 				);
 			ma(2) <= (
-				-- From 74257
 				(cas and not aec and a(10))
 				or (cas and not aec and a(9))
-				-- From 74373
 				or (aec and a(2) and ras)
 				);
 			ma(1) <= (
-				-- From 74257
 				(cas and not aec and a(3))
 				or (cas and not aec and a(1))
-				-- From 74373
 				or (aec and a(1) and ras)
 				);
 			ma(0) <= (
-				-- From 74257
 				(cas and not aec and a(2))
 				or (cas and not aec and a(0))
-				-- From 74373
 				or (aec and a(0) and ras)
 				);
 				-- 74139 2->4 demux - Side 'A'
@@ -178,11 +158,10 @@ begin
 					end case;
 				end if;
 			ma(7) <= (
-				-- From 74258
 				(aec and cas and va(15))
 				);
-	-- From chip2.pdf .. STOP
-		
+			-- A direct mapping. Might work ok but might need additional logic.
+			nmi <= restore;
 	end process;
 	
 	-- Connect the ioBuffer to the 'io' output pin..
