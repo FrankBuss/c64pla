@@ -41,23 +41,85 @@
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="c64pla_251715.rpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="c64pla_251715.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="c64pla_251715.syr"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="c64pla_251715.tim"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="c64pla_251715.tspec"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="c64pla_251715.vm6"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="c64pla_251715.xml"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="c64pla_251715.xst"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="c64pla_251715_build.xml"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="c64pla_251715_envsettings.html"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="c64pla_251715_html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="c64pla_251715_ngdbuild.xrpt"/>
     <file xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="c64pla_251715_pad.csv"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="c64pla_251715_summary.html"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="c64pla_251715_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="c64pla_251715_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="decoder_testbench_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="decoder_testbench_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="decoder_testbench_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="decoder_testbench_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1355670185" xil_pn:in_ck="7610344522444435695" xil_pn:name="TRANEXT_xstsynthesize_xc9500xl" xil_pn:prop_ck="-7486463282849009720" xil_pn:start_ts="1355670176">
+    <transform xil_pn:end_ts="1355681796" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1355681796">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1355681961" xil_pn:in_ck="-2914316946356792074" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1355681961">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../vhdl/c64pla7.vhd"/>
+      <outfile xil_pn:name="../vhdl/c64pla7_testbench.vhd"/>
+      <outfile xil_pn:name="../vhdl/c64pla_251715.vhd"/>
+      <outfile xil_pn:name="../vhdl/decoder.vhd"/>
+      <outfile xil_pn:name="../vhdl/decoder_testbench.vhd"/>
+      <outfile xil_pn:name="../vhdl/ttl74139.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1355681796" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="807879919693087819" xil_pn:start_ts="1355681796">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1355681970" xil_pn:in_ck="-2914316946356792074" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1355681970">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../vhdl/c64pla7.vhd"/>
+      <outfile xil_pn:name="../vhdl/c64pla7_testbench.vhd"/>
+      <outfile xil_pn:name="../vhdl/c64pla_251715.vhd"/>
+      <outfile xil_pn:name="../vhdl/decoder.vhd"/>
+      <outfile xil_pn:name="../vhdl/decoder_testbench.vhd"/>
+      <outfile xil_pn:name="../vhdl/ttl74139.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1355681979" xil_pn:in_ck="-2914316946356792074" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="702899743623788804" xil_pn:start_ts="1355681970">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="decoder_testbench_beh.prj"/>
+      <outfile xil_pn:name="decoder_testbench_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1355681980" xil_pn:in_ck="-2670047387076697020" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5775578109534525387" xil_pn:start_ts="1355681979">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="decoder_testbench_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+    </transform>
+    <transform xil_pn:end_ts="1355681397" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1355681397">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1355681397" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-7416283551987555706" xil_pn:start_ts="1355681397">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1355681739" xil_pn:in_ck="-5629868077397487823" xil_pn:name="TRANEXT_xstsynthesize_xc9500xl" xil_pn:prop_ck="-7486463282849009720" xil_pn:start_ts="1355681730">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -78,7 +140,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1355670193" xil_pn:in_ck="-6024130825522208819" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="5717683746260188660" xil_pn:start_ts="1355670185">
+    <transform xil_pn:end_ts="1355681746" xil_pn:in_ck="-6024130825522208819" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="5717683746260188660" xil_pn:start_ts="1355681739">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -88,8 +150,9 @@
       <outfile xil_pn:name="c64pla_251715.ngd"/>
       <outfile xil_pn:name="c64pla_251715_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1355670212" xil_pn:in_ck="-3384390944129217659" xil_pn:name="TRANEXT_vm6File_xc9500xl" xil_pn:prop_ck="-1144459910990002307" xil_pn:start_ts="1355670193">
+    <transform xil_pn:end_ts="1355681756" xil_pn:in_ck="-3384390944129217659" xil_pn:name="TRANEXT_vm6File_xc9500xl" xil_pn:prop_ck="-1144459910990002307" xil_pn:start_ts="1355681746">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="c64pla_251715.gyd"/>
       <outfile xil_pn:name="c64pla_251715.mfd"/>
@@ -97,6 +160,7 @@
       <outfile xil_pn:name="c64pla_251715.pad"/>
       <outfile xil_pn:name="c64pla_251715.pnx"/>
       <outfile xil_pn:name="c64pla_251715.rpt"/>
+      <outfile xil_pn:name="c64pla_251715.tim"/>
       <outfile xil_pn:name="c64pla_251715.tspec"/>
       <outfile xil_pn:name="c64pla_251715.vm6"/>
       <outfile xil_pn:name="c64pla_251715.xml"/>
@@ -104,15 +168,17 @@
       <outfile xil_pn:name="c64pla_251715_html"/>
       <outfile xil_pn:name="c64pla_251715_pad.csv"/>
     </transform>
-    <transform xil_pn:end_ts="1355670214" xil_pn:in_ck="-3384390944129208795" xil_pn:name="TRANEXT_crtProg_xc9500" xil_pn:prop_ck="-6294026017969277533" xil_pn:start_ts="1355670212">
+    <transform xil_pn:end_ts="1355681759" xil_pn:in_ck="-3384390944129208795" xil_pn:name="TRANEXT_crtProg_xc9500" xil_pn:prop_ck="-6294026017969277533" xil_pn:start_ts="1355681756">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="c64pla_251715.jed"/>
     </transform>
     <transform xil_pn:end_ts="1355670212" xil_pn:in_ck="-3384390944129208795" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1355670209">
-      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
   </transforms>
 

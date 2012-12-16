@@ -57,7 +57,8 @@ end c64pla_251715;
 architecture rtl of c64pla_251715 is
 
 signal ioBuffer: std_logic;
-signal sideB: std_logic;
+signal chip2_ic13_y12n: std_logic;
+signal chip2_ic13_y13n: std_logic;
 
 begin
 
@@ -92,9 +93,30 @@ begin
 			a12 => a(12)
 		);
 
-	process(a(0), a(1), a(2), a(3), a(4), a(5), a(6), a(7), a(8), a(9), a(10), a(11), phi0, restore)
-	subtype demuxA is std_logic_vector(1 downto 0);
-	subtype demuxB is std_logic_vector(1 downto 0);
+	chip2_ic13: entity ttl74139
+		port map(
+			-- decoder 1
+			g1n => ioBuffer,
+			a1 => a(10),
+			b1 => a(11),
+			y10n => vic,
+			y11n => sid,
+			y12n => chip2_ic13_y12n,
+			y13n => chip2_ic13_y13n,
+			
+			-- decoder 2
+			g2n => chip2_ic13_y13n,
+			a2 => a(8),
+			b2 => a(9),
+			y20n => cia1,
+			y21n => cia2,
+			y22n => io1,
+			y23n => io2
+	);
+	
+	colram <= chip2_ic13_y12n and aec;
+
+	process(a, phi0, restore, cas, aec, va, ras, clk)
 	begin
 			ma(6) <= (
 				(cas and not aec and a(14))
@@ -137,26 +159,6 @@ begin
 				or (cas and not aec and a(0))
 				or (aec and a(0) and ras)
 				);
-				-- 74139 2->4 demux - Side 'A'
-				if ioBuffer = '0' then
-					case demuxA'(a(8) & a(10)) is
-						when "00" => vic <= '0';
-						when "01" => sid <= '0';
-						when "10" => colram <= aec;
-						when "11" => sideB <= '0';
-						when others => null;
-					end case;
-				end if;
-				-- 74139 2->4 demux - Side 'B'
-				if sideB = '0' then
-					case demuxB'(a(9) & a(11)) is
-						when "00" => cia1 <= '0';
-						when "01" => cia2 <= '0';
-						when "10" => io1 <= '0';
-						when "11" => io2 <= '0';
-						when others => null;
-					end case;
-				end if;
 			ma(7) <= (
 				(aec and cas and va(15))
 				);
