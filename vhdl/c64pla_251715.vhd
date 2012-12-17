@@ -114,6 +114,29 @@ begin
 			y23n => io2
 	);
 	
+	chip2_ic11: entity ttl74257
+		port map(
+			-- common signals
+			sel => cas,
+			gn => not aec,
+			-- multiplexer 1
+			a1 => a(11),
+			b1 => a(3),
+			y1 => ma(3),
+			-- multiplexer 2
+			a2 => a(10),
+			b2 => a(2),
+			y2 => ma(2),
+			-- multiplexer 3
+			a3 => a(9),
+			b3 => a(1),
+			y3 => ma(1),
+			-- multiplexer 4
+			a4 => a(8),
+			b4 => a(0),
+			y4 => ma(0)
+	);
+	
 	colram <= chip2_ic13_y12n and aec;
 
 	process(a, phi0, restore, cas, aec, va, ras, clk)
@@ -138,26 +161,6 @@ begin
 				(cas and not aec and a(7))
 				or (cas and not aec and a(5))
 				or (aec and a(4) and ras)
-				);
-			ma(3) <= (
-				(cas and not aec and a(11))
-				or (cas and not aec and a(9))
-				or (aec and a(3) and ras)
-				);
-			ma(2) <= (
-				(cas and not aec and a(10))
-				or (cas and not aec and a(9))
-				or (aec and a(2) and ras)
-				);
-			ma(1) <= (
-				(cas and not aec and a(3))
-				or (cas and not aec and a(1))
-				or (aec and a(1) and ras)
-				);
-			ma(0) <= (
-				(cas and not aec and a(2))
-				or (cas and not aec and a(0))
-				or (aec and a(0) and ras)
 				);
 			ma(7) <= (
 				(aec and cas and va(15))
