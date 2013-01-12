@@ -137,6 +137,17 @@ begin
 			y4 => ma(0)
 	);
 	
+	chip2_ic14: entity ttl74258
+		port map(
+			-- common signals
+			sel => cas,
+			gn => aec,
+			-- multiplexer 1
+			a1 => va(15),
+			b1 => not a(7),
+			yn1 => ma(7)
+		);
+	
 	colram <= chip2_ic13_y12n and aec;
 
 	process(a, phi0, restore, cas, aec, va, ras, clk)
@@ -152,18 +163,10 @@ begin
 			  or (cas and not aec and a(15))
 			  or (aec and a(5) and ras)
 			   );
-			ma(7) <= (
-				(cas and not aec and a(6))
-				or (cas and not aec and a(7))
-				or (aec and a(7) and ras)
-			   );
 			ma(4) <= (
 				(cas and not aec and a(7))
 				or (cas and not aec and a(5))
 				or (aec and a(4) and ras)
-				);
-			ma(7) <= (
-				(aec and cas and va(15))
 				);
 			
 			-- A direct mapping. Might work ok but might need additional logic.

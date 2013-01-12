@@ -92,21 +92,23 @@
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1355688083" xil_pn:in_ck="-2914316946356792074" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="702899743623788804" xil_pn:start_ts="1355688070">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1355688089" xil_pn:in_ck="-2670047387076697020" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5775578109534525387" xil_pn:start_ts="1355688083">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -121,58 +123,66 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1355683294" xil_pn:in_ck="-5629868077397487823" xil_pn:name="TRANEXT_xstsynthesize_xc9500xl" xil_pn:prop_ck="-7486463282849009720" xil_pn:start_ts="1355683285">
+    <transform xil_pn:end_ts="1357988004" xil_pn:in_ck="-1682197620182181316" xil_pn:name="TRANEXT_xstsynthesize_xc9500xl" xil_pn:prop_ck="-7486463282849009720" xil_pn:start_ts="1357987996">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="c64pla_251715.lso"/>
+      <outfile xil_pn:name="c64pla_251715.ngc"/>
+      <outfile xil_pn:name="c64pla_251715.ngr"/>
+      <outfile xil_pn:name="c64pla_251715.prj"/>
+      <outfile xil_pn:name="c64pla_251715.stx"/>
+      <outfile xil_pn:name="c64pla_251715.syr"/>
+      <outfile xil_pn:name="c64pla_251715.xst"/>
+      <outfile xil_pn:name="c64pla_251715_vhdl.prj"/>
+      <outfile xil_pn:name="c64pla_251715_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
     </transform>
     <transform xil_pn:end_ts="1355670185" xil_pn:in_ck="106370596137" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="6764973710221734187" xil_pn:start_ts="1355670185">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1355683301" xil_pn:in_ck="-6024130825522208819" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="5717683746260188660" xil_pn:start_ts="1355683294">
+    <transform xil_pn:end_ts="1357988014" xil_pn:in_ck="-6024130825522208819" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="5717683746260188660" xil_pn:start_ts="1357988004">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="NotReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="c64pla_251715.bld"/>
+      <outfile xil_pn:name="c64pla_251715.ngd"/>
+      <outfile xil_pn:name="c64pla_251715_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1355683311" xil_pn:in_ck="-3384390944129217659" xil_pn:name="TRANEXT_vm6File_xc9500xl" xil_pn:prop_ck="-1144459910990002307" xil_pn:start_ts="1355683301">
+    <transform xil_pn:end_ts="1357988031" xil_pn:in_ck="-3384390944129217659" xil_pn:name="TRANEXT_vm6File_xc9500xl" xil_pn:prop_ck="-1144459910990002307" xil_pn:start_ts="1357988014">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="NotReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="c64pla_251715.gyd"/>
+      <outfile xil_pn:name="c64pla_251715.mfd"/>
+      <outfile xil_pn:name="c64pla_251715.nga"/>
+      <outfile xil_pn:name="c64pla_251715.pad"/>
+      <outfile xil_pn:name="c64pla_251715.pnx"/>
+      <outfile xil_pn:name="c64pla_251715.rpt"/>
+      <outfile xil_pn:name="c64pla_251715.tim"/>
+      <outfile xil_pn:name="c64pla_251715.tspec"/>
+      <outfile xil_pn:name="c64pla_251715.vm6"/>
+      <outfile xil_pn:name="c64pla_251715.xml"/>
+      <outfile xil_pn:name="c64pla_251715_build.xml"/>
+      <outfile xil_pn:name="c64pla_251715_html"/>
+      <outfile xil_pn:name="c64pla_251715_pad.csv"/>
     </transform>
-    <transform xil_pn:end_ts="1355683313" xil_pn:in_ck="-3384390944129208795" xil_pn:name="TRANEXT_crtProg_xc9500" xil_pn:prop_ck="-6294026017969277533" xil_pn:start_ts="1355683311">
+    <transform xil_pn:end_ts="1357988035" xil_pn:in_ck="-3384390944129208795" xil_pn:name="TRANEXT_crtProg_xc9500" xil_pn:prop_ck="-6294026017969277533" xil_pn:start_ts="1357988031">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="c64pla_251715.jed"/>
     </transform>
-    <transform xil_pn:end_ts="1355670212" xil_pn:in_ck="-3384390944129208795" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1355670209">
+    <transform xil_pn:end_ts="1355777741" xil_pn:in_ck="-3384390944129208795" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1355777738">
       <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
     </transform>
   </transforms>
 
