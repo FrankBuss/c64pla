@@ -123,10 +123,12 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1357988004" xil_pn:in_ck="-1682197620182181316" xil_pn:name="TRANEXT_xstsynthesize_xc9500xl" xil_pn:prop_ck="-7486463282849009720" xil_pn:start_ts="1357987996">
+    <transform xil_pn:end_ts="1357990296" xil_pn:in_ck="-8218241175208986716" xil_pn:name="TRANEXT_xstsynthesize_xc9500xl" xil_pn:prop_ck="-7486463282849009720" xil_pn:start_ts="1357990284">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="c64pla_251715.lso"/>
       <outfile xil_pn:name="c64pla_251715.ngc"/>
@@ -144,20 +146,22 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1357988014" xil_pn:in_ck="-6024130825522208819" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="5717683746260188660" xil_pn:start_ts="1357988004">
+    <transform xil_pn:end_ts="1357990305" xil_pn:in_ck="-6024130825522208819" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="5717683746260188660" xil_pn:start_ts="1357990296">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="c64pla_251715.bld"/>
       <outfile xil_pn:name="c64pla_251715.ngd"/>
       <outfile xil_pn:name="c64pla_251715_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1357988031" xil_pn:in_ck="-3384390944129217659" xil_pn:name="TRANEXT_vm6File_xc9500xl" xil_pn:prop_ck="-1144459910990002307" xil_pn:start_ts="1357988014">
+    <transform xil_pn:end_ts="1357990321" xil_pn:in_ck="-3384390944129217659" xil_pn:name="TRANEXT_vm6File_xc9500xl" xil_pn:prop_ck="-1144459910990002307" xil_pn:start_ts="1357990305">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="c64pla_251715.gyd"/>
       <outfile xil_pn:name="c64pla_251715.mfd"/>
       <outfile xil_pn:name="c64pla_251715.nga"/>
@@ -172,9 +176,10 @@
       <outfile xil_pn:name="c64pla_251715_html"/>
       <outfile xil_pn:name="c64pla_251715_pad.csv"/>
     </transform>
-    <transform xil_pn:end_ts="1357988035" xil_pn:in_ck="-3384390944129208795" xil_pn:name="TRANEXT_crtProg_xc9500" xil_pn:prop_ck="-6294026017969277533" xil_pn:start_ts="1357988031">
+    <transform xil_pn:end_ts="1357990326" xil_pn:in_ck="-3384390944129208795" xil_pn:name="TRANEXT_crtProg_xc9500" xil_pn:prop_ck="-6294026017969277533" xil_pn:start_ts="1357990321">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="c64pla_251715.jed"/>
     </transform>
     <transform xil_pn:end_ts="1355777741" xil_pn:in_ck="-3384390944129208795" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1355777738">
@@ -182,6 +187,7 @@
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputChanged"/>
     </transform>
   </transforms>

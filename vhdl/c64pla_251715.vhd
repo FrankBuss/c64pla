@@ -147,6 +147,23 @@ begin
 			b1 => not a(7),
 			yn1 => ma(7)
 		);
+		
+	chip2_ic12: entity ttl74373
+		port map(
+			-- common signals
+			gn => ras,
+			oe => aec,
+			-- D (input)
+			d(1) => a(0),
+			d(2) => a(1),
+			d(3) => a(2),
+			d(4) => a(3),
+			-- Q (output)
+			q(1) => ma(0),
+			q(2) => ma(1),
+			q(3) => ma(2),
+			q(4) => ma(3)
+		);
 	
 	colram <= chip2_ic13_y12n and aec;
 
