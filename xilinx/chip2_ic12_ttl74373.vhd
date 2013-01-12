@@ -5,21 +5,23 @@ use ieee.numeric_std.all;
 entity ttl74373 is
 	port(
 		-- generic
-		gn: in std_logic;
-		oe: in std_logic;
+		g: in std_logic;
+		oen: in std_logic;
 		-- latch signals
-		q: inout std_logic_vector(4 downto 1);
-		d: inout std_logic_vector(4 downto 1)
+		q: out std_logic_vector(4 downto 1);
+		d: in std_logic_vector(4 downto 1)
 	);
 end ttl74373;
 
 architecture rtl of ttl74373 is
 
 begin
-	process(oe)
+	process(oen)
 	begin
-		if oe = '1' and gn = '0' then
+		if oen = '0' and g = '1' then
 			q <= d;
+		else
+			q <= (others => 'Z');
 		end if;
 	end process;
 end architecture rtl;

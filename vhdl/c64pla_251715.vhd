@@ -151,8 +151,8 @@ begin
 	chip2_ic12: entity ttl74373
 		port map(
 			-- common signals
-			gn => ras,
-			oe => aec,
+			g => ras,
+			oen => aec,
 			-- D (input)
 			d(1) => a(0),
 			d(2) => a(1),
