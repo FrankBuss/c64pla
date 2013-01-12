@@ -15,12 +15,20 @@ end ttl74373;
 
 architecture rtl of ttl74373 is
 
+signal lastvalue: std_logic_vector(4 downto 1);
+
 begin
 	process(oen)
 	begin
 		if oen = '0' and g = '1' then
 			q <= d;
+			-- store value
+			lastvalue <= d;
 		else
+			if oen = '0' and g = '0' then
+				-- drive the last value..
+				q <= lastvalue;
+			end if;
 			q <= (others => 'Z');
 		end if;
 	end process;
