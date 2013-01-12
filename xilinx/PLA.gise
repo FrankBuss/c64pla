@@ -123,18 +123,15 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1357990296" xil_pn:in_ck="-8218241175208986716" xil_pn:name="TRANEXT_xstsynthesize_xc9500xl" xil_pn:prop_ck="-7486463282849009720" xil_pn:start_ts="1357990284">
-      <status xil_pn:value="SuccessfullyRun"/>
+    <transform xil_pn:end_ts="1358002150" xil_pn:in_ck="1768357556626921299" xil_pn:name="TRANEXT_xstsynthesize_xc9500xl" xil_pn:prop_ck="-7486463282849009720" xil_pn:start_ts="1358002141">
+      <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputAdded"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="c64pla_251715.lso"/>
       <outfile xil_pn:name="c64pla_251715.ngc"/>
       <outfile xil_pn:name="c64pla_251715.ngr"/>
       <outfile xil_pn:name="c64pla_251715.prj"/>
-      <outfile xil_pn:name="c64pla_251715.stx"/>
       <outfile xil_pn:name="c64pla_251715.syr"/>
       <outfile xil_pn:name="c64pla_251715.xst"/>
       <outfile xil_pn:name="c64pla_251715_vhdl.prj"/>
