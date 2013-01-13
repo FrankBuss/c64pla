@@ -220,22 +220,6 @@ begin
 
 	process(a, phi0, restore, cas, aec, va, ras, clk)
 	begin
-			ma(6) <= (
-				(cas and not aec and a(14))
-				or (cas and not aec and a(15))
-				or (cas and aec and not va(14))
-				or (aec and a(6) and ras)
-				);
-			ma(5) <= (
-			  (cas and not aec and a(13))
-			  or (cas and not aec and a(15))
-			  or (aec and a(5) and ras)
-			   );
-			ma(4) <= (
-				(cas and not aec and a(7))
-				or (cas and not aec and a(5))
-				or (aec and a(4) and ras)
-				);
 			
 			-- A direct mapping. Might work ok but might need additional logic.
 			nmi <= restore;
