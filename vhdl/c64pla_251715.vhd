@@ -137,6 +137,29 @@ begin
 			y4 => ma(0)
 	);
 	
+	chip1_ic26: entity ttl74257
+		port map(
+			-- common signals
+			sel => cas,
+			gn => not aec,
+			-- multiplexer 1
+			a1 => a(14),
+			b1 => a(6),
+			y1 => ma(6),
+			-- multiplexer 2
+			a2 => a(13),
+			b2 => a(5),
+			y2 => ma(5),
+			-- multiplexer 3
+			a3 => a(15),
+			b3 => a(7),
+			y3 => ma(7),
+			-- multiplexer 4
+			a4 => a(12),
+			b4 => a(4),
+			y4 => ma(4)
+	);
+	
 	chip2_ic14: entity ttl74258
 		port map(
 			-- common signals
@@ -147,6 +170,17 @@ begin
 			b1 => not a(7),
 			yn1 => ma(7)
 		);
+		
+	chip1_ic28: entity ttl74258
+		port map(
+			-- common signals
+			sel => cas,
+			gn => aec,
+			-- multiplexer 1
+			a1 => va(14),
+			b1 => not va6,
+			yn1 => ma(6)
+	);
 		
 	chip2_ic12: entity ttl74373
 		port map(
@@ -163,6 +197,23 @@ begin
 			q(2) => ma(1),
 			q(3) => ma(2),
 			q(4) => ma(3)
+		);
+		
+	chip1_ic27: entity ttl74373
+		port map(
+			-- common signals
+			g => ras,
+			oen => aec,
+			-- D (input)
+			d(1) => ma(4),
+			d(2) => ma(5),
+			d(3) => ma(6),
+			d(4) => ma(7),
+			-- Q (output)
+			q(1) => a(4),
+			q(2) => a(5),
+			q(3) => a(6),
+			q(4) => a(7)
 		);
 	
 	colram <= chip2_ic13_y12n and aec;
