@@ -29,7 +29,7 @@ begin
 			sel => sel
 	);
 	
-	yn1 <= not iy1;
+	yn1 <= not iy1 when gn = '0' else 'Z';
 
 end architecture rtl;
 
