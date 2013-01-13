@@ -16,15 +16,19 @@ end ttl74258;
 
 architecture rtl of ttl74258 is
 
+signal iy1: std_logic;
+
 begin
 
-	inv_multiplexer1: entity inv_multiplexer
+	multiplexer5: entity multiplexer
 		port map (
 			a => a1,
 			b => b1,
-			y => yn1,
+			y => iy1,
 			sel => sel
 	);
+	
+	yn1 <= not iy1;
 
 end architecture rtl;
 
