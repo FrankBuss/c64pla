@@ -22,6 +22,7 @@ begin
 
 	multiplexer5: entity multiplexer
 		port map (
+			gn => gn,
 			a => a1,
 			b => b1,
 			y => iy1,

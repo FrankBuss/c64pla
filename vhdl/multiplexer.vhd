@@ -4,6 +4,7 @@ use ieee.numeric_std.all;
 
 entity multiplexer is
 	port(
+		gn: in std_logic;
 		a: in std_logic;
 		b: in std_logic;
 		y: out std_logic;
@@ -17,7 +18,13 @@ begin
 
 	process(a, b, sel)
 	begin
-		if sel = '1' then y <= a; else y <= b; end if;
+		if gn = '0' then
+			if sel = '1' then 
+				y <= a; 
+			else 
+				y <= b; 
+			end if;
+		end if;
 	end process;
 
 end architecture rtl;

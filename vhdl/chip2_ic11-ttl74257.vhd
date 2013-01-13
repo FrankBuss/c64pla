@@ -32,6 +32,7 @@ begin
 
 	multiplexer1: entity multiplexer
 		port map (
+			gn => gn,
 			a => a1,
 			b => b1,
 			y => y1,
@@ -40,6 +41,7 @@ begin
 	
 	multiplexer2: entity multiplexer
 		port map (
+			gn => gn,
 			a => a2,
 			b => b2,
 			y => y2,
@@ -48,6 +50,7 @@ begin
 	
 	multiplexer3: entity multiplexer
 		port map (
+			gn => gn,
 			a => a3,
 			b => b3,
 			y => y3,
@@ -56,6 +59,7 @@ begin
 	
 	multiplexer4: entity multiplexer
 		port map (
+			gn => gn,
 			a => a4,
 			b => b4,
 			y => y4,
