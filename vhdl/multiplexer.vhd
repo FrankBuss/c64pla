@@ -24,6 +24,8 @@ begin
 			else 
 				y <= b; 
 			end if;
+		else
+			y <= 'Z';
 		end if;
 	end process;
 
