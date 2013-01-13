@@ -28,8 +28,9 @@ begin
 			if oen = '0' and g = '0' then
 				-- drive the last value..
 				q <= lastvalue;
+			else
+				q <= (others => 'Z');			
 			end if;
-			q <= (others => 'Z');
 		end if;
 	end process;
 end architecture rtl;
