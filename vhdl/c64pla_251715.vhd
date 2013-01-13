@@ -224,8 +224,8 @@ begin
 			-- A direct mapping. Might work ok but might need additional logic.
 			nmi <= restore;
 			-- Define directions for outputs..
-			dir1 <= '1';
-			dir2 <= '1';
+			dir1 <= not aec;
+			dir2 <= aec;
 			aux_dir <= '1';
 			-- Enable the voltage level shifters..
 			oe <= '0';
