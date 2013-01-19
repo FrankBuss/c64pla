@@ -16,7 +16,7 @@ architecture rtl of multiplexer is
 
 begin
 
-	process(a, b, sel)
+	process(a, b, sel, gn)
 	begin
 		if gn = '0' then
 			if sel = '1' then 

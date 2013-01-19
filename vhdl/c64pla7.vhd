@@ -4,7 +4,6 @@ use ieee.numeric_std.all;
 
 entity c64pla7 is
 	port(
-		fe: in std_logic;
 		a13: in std_logic;
 		a14: in std_logic;
 		a15: in std_logic;
@@ -38,7 +37,7 @@ architecture rtl of c64pla7 is
 
 begin
 
-	process(fe, a13, a14, a15, va14, charen, hiram, loram, cas, xoe, va12, va13, game, exrom, rw, aec, ba, a12)
+	process(a13, a14, a15, va14, charen, hiram, loram, cas, xoe, va12, va13, game, exrom, rw, aec, ba, a12)
 	begin
 		if xoe = '1' then
 			romh <= 'Z';

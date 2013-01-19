@@ -21,7 +21,6 @@ entity c64pla_251715 is
 		phi0: in std_logic;
 		a: inout std_logic_vector(15 downto 0);
 		ras: in std_logic;
-		va6: in std_logic;
 		ba: in std_logic;
 		sid: out std_logic;
 		aec: in std_logic;
@@ -34,12 +33,14 @@ entity c64pla_251715 is
 		romh: out std_logic;
 		io1: out std_logic;
 		nmi: out std_logic;
+		va6: in std_logic;
 		va7: in std_logic;
+		va14: in std_logic;
+		va15: in std_logic;
 		rw: in std_logic;
 		loram: in std_logic;
 		charen: in std_logic;
 		hiram: in std_logic;
-		va: in std_logic_vector(15 downto 12);
 		restore: in std_logic;
 		game: in std_logic;
 
@@ -50,7 +51,7 @@ entity c64pla_251715 is
 
 		misc1: out std_logic;
 		misc2: out std_logic;
-		misc3: out std_logic
+		misc3: in std_logic
 	);
 end c64pla_251715;
 
@@ -59,16 +60,19 @@ architecture rtl of c64pla_251715 is
 signal ioBuffer: std_logic;
 signal chip2_ic13_y12n: std_logic;
 signal chip2_ic13_y13n: std_logic;
+signal i_casram: std_logic;
+signal i_ramrw: std_logic;
+
+signal counter: unsigned(10 downto 0) := (others => '0');
 
 begin
 
 	c64pla7_inst: entity c64pla7 
 		port map(
-			fe => '1',
 			a13 => a(13),
 			a14 => a(14),
 			a15 => a(15),
-			va14 => va(14),
+			va14 => va14,
 			charen => charen,
 			hiram => hiram,
 			loram => loram,
@@ -76,15 +80,15 @@ begin
 			romh => romh,
 			roml => roml,
 			io => ioBuffer,
-			ramrw => ramrw,
-			grw => open,
+			ramrw => i_ramrw,
+			grw => aux(0),
 			charom => charom,
 			kernal => kernal,
 			basic => basic,
-			casram => casram,
+			casram => i_casram,
 			xoe => '0',
-			va12 => va(12),
-			va13 => va(13),
+			va12 => ma(4),
+			va13 => ma(5),
 			game => game,
 			exrom => exrom,
 			rw => rw,
@@ -166,8 +170,8 @@ begin
 			sel => cas,
 			gn => aec,
 			-- multiplexer 1
-			a1 => va(15),
-			b1 => not a(7),
+			a1 => va15,
+			b1 => not va7,
 			yn1 => ma(7)
 		);
 		
@@ -177,7 +181,7 @@ begin
 			sel => cas,
 			gn => aec,
 			-- multiplexer 1
-			a1 => va(14),
+			a1 => va14,
 			b1 => not va6,
 			yn1 => ma(6)
 	);
@@ -188,15 +192,15 @@ begin
 			g => ras,
 			oen => aec,
 			-- D (input)
-			d(1) => a(0),
-			d(2) => a(1),
-			d(3) => a(2),
-			d(4) => a(3),
+			d(1) => ma(0),
+			d(2) => ma(1),
+			d(3) => ma(2),
+			d(4) => ma(3),
 			-- Q (output)
-			q(1) => ma(0),
-			q(2) => ma(1),
-			q(3) => ma(2),
-			q(4) => ma(3)
+			q(1) => a(0),
+			q(2) => a(1),
+			q(3) => a(2),
+			q(4) => a(3)
 		);
 		
 	chip1_ic27: entity ttl74373
@@ -217,26 +221,34 @@ begin
 		);
 	
 	colram <= chip2_ic13_y12n and aec;
+	ramrw <= i_ramrw or ras;
 
-	process(a, phi0, restore, cas, aec, va, ras, clk)
-	begin
-			
-			-- A direct mapping. Might work ok but might need additional logic.
-			nmi <= restore;
-			-- Define directions for outputs..
-			dir1 <= not aec;
-			dir2 <= aec;
-			aux_dir <= '1';
-			-- Enable the voltage level shifters..
-			oe <= '0';
-			-- Avoid a few other warnings about un-connected signals at this time..
-			misc1 <= clk;
-			misc2 <= restore;
-			misc3 <= not clk;
-			
-	end process;
+	-- A direct mapping. Might work ok but might need additional logic.
+	nmi <= restore;
+	-- Define directions for outputs..
+	dir1 <= not aec;
+	dir2 <= aec;
+	aux_dir <= '1';
+	-- Enable the voltage level shifters..
+	oe <= '0';
 	
 	-- Connect the ioBuffer to the 'io' output pin..
 	io <= ioBuffer;
+
+	-- LED blinking
+	process(phi0)
+	begin
+		if rising_edge(phi0) then 
+			counter <= counter + 1;
+			misc2 <= counter(counter'high);
+		end if;
+	end process;
+	
+	-- external RC delay
+	misc1 <= i_casram;
+	casram <= misc3;
+	
+	-- map some interesting signals to the aux lines
+	aux(7 downto 1) <= a(7 downto 1);
 
 end architecture rtl;
