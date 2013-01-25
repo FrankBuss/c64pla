@@ -4110,7 +4110,6 @@ architecture test of c64pla7_testbench is
 		x"fe", x"fe", x"ff", x"ff", x"fe", x"fe", x"ff", x"ff", x"fe", x"fe", x"ff", x"ff", x"fe", x"fe", x"ff", x"ff"
 	);
 
-	signal fe: std_logic := '0';
 	signal a13: std_logic := '0';
 	signal a14: std_logic := '0';
 	signal a15: std_logic := '0';
@@ -4142,7 +4141,6 @@ begin
 	
 	c64pla7_inst: entity c64pla7 
 		port map(
-			fe => fe,
 			a13 => a13,
 			a14 => a14,
 			a15 => a15,
@@ -4155,7 +4153,6 @@ begin
 			roml => roml,
 			io => io,
 			ramrw => ramrw,
-			grw => grw,
 			charom => charom,
 			kernal => kernal,
 			basic => basic,
@@ -4190,7 +4187,7 @@ begin
 			a13 <= input(12);
 			a12 <= input(14);
 			ba <= input(13);
-			aec <= input(8);
+			aec <= not input(8);
 			rw <= input(9);
 			exrom <= input(11);
 			game <= input(15);

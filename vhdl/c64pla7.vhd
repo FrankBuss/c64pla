@@ -16,7 +16,6 @@ entity c64pla7 is
 		roml: out std_logic;
 		io: out std_logic;
 		ramrw: out std_logic;
-		grw: out std_logic;
 		charom: out std_logic;
 		kernal: out std_logic;
 		basic: out std_logic;
@@ -50,69 +49,67 @@ begin
 			casram <= 'Z';
 		else
 			romh <= not (
-				((hiram and a15 and not a14 and a13 and not aec and rw and not exrom and not game) 
-				or (a15 and a14 and a13 and not aec and exrom and not game) 
-				or (aec and exrom and not game and va13 and va12))  );
+				((hiram and a15 and not a14 and a13 and aec and rw and not exrom and not game) 
+				or (a15 and a14 and a13 and aec and exrom and not game) 
+				or (not aec and exrom and not game and va13 and va12))  );
 
 			roml <= not (
-				((loram and hiram and a15 and not a14 and not a13 and not aec and rw and not exrom) 
-				or (a15 and not a14 and not a13 and not aec and exrom and not game))  );
+				((loram and hiram and a15 and not a14 and not a13 and aec and rw and not exrom) 
+				or (a15 and not a14 and not a13 and aec and exrom and not game))  );
 
 			io <= not (
-				((hiram and charen and a15 and a14 and not a13 and a12 and ba and not aec and rw and game) 
-				or (hiram and charen and a15 and a14 and not a13 and a12 and not aec and not rw and game) 
-				or (loram and charen and a15 and a14 and not a13 and a12 and ba and not aec and rw and game) 
-				or (loram and charen and a15 and a14 and not a13 and a12 and not aec and not rw and game) 
-				or (hiram and charen and a15 and a14 and not a13 and a12 and ba and not aec and rw and not exrom and not game) 
-				or (hiram and charen and a15 and a14 and not a13 and a12 and not aec and not rw and not exrom and not game) 
-				or (loram and charen and a15 and a14 and not a13 and a12 and ba and not aec and rw and not exrom and not game) 
-				or (loram and charen and a15 and a14 and not a13 and a12 and not aec and not rw and not exrom and not game) 
-				or (a15 and a14 and not a13 and a12 and ba and not aec and rw and exrom and not game) 
-				or (a15 and a14 and not a13 and a12 and not aec and not rw and exrom and not game))  );
-
-			grw <= cas or not a15 or not a14 or a13 or not a12 or aec or rw;
+				((hiram and charen and a15 and a14 and not a13 and a12 and ba and aec and rw and game) 
+				or (hiram and charen and a15 and a14 and not a13 and a12 and aec and not rw and game) 
+				or (loram and charen and a15 and a14 and not a13 and a12 and ba and aec and rw and game) 
+				or (loram and charen and a15 and a14 and not a13 and a12 and aec and not rw and game) 
+				or (hiram and charen and a15 and a14 and not a13 and a12 and ba and aec and rw and not exrom and not game) 
+				or (hiram and charen and a15 and a14 and not a13 and a12 and aec and not rw and not exrom and not game) 
+				or (loram and charen and a15 and a14 and not a13 and a12 and ba and aec and rw and not exrom and not game) 
+				or (loram and charen and a15 and a14 and not a13 and a12 and aec and not rw and not exrom and not game) 
+				or (a15 and a14 and not a13 and a12 and ba and aec and rw and exrom and not game) 
+				or (a15 and a14 and not a13 and a12 and aec and not rw and exrom and not game))  );
 
 			ramrw <= not (
-				(not rw and not aec)  ) ;
+				(not rw and aec)  ) ;
 
 			charom <= not (
-				((hiram and not charen and a15 and a14 and not a13 and a12 and not aec and rw and game) 
-				or (loram and not charen and a15 and a14 and not a13 and a12 and not aec and rw and game) 
-				or (hiram and not charen and a15 and a14 and not a13 and a12 and not aec and rw and not exrom and not game) 
-				or (va14 and aec and game and not va13 and va12)
-				or (va14 and aec and not exrom and not game and not va13 and va12))  );
+				((hiram and not charen and a15 and a14 and not a13 and a12 and aec and rw and game) 
+				or (loram and not charen and a15 and a14 and not a13 and a12 and aec and rw and game) 
+				or (hiram and not charen and a15 and a14 and not a13 and a12 and aec and rw and not exrom and not game) 
+				or (va14 and not aec and game and not va13 and va12)
+				or (va14 and not aec and not exrom and not game and not va13 and va12))  );
 
 			kernal <= not (
-				((hiram and a15 and a14 and a13 and not aec and rw and game) 
-				or (hiram and a15 and a14 and a13 and not aec and rw and not exrom and not game))  );
+				((hiram and a15 and a14 and a13 and aec and rw and game) 
+				or (hiram and a15 and a14 and a13 and aec and rw and not exrom and not game))  );
 
 			basic <= not (
-				(loram and hiram and a15 and not a14 and a13 and not aec and rw and game)  );
+				(loram and hiram and a15 and not a14 and a13 and aec and rw and game)  );
 
 			casram <= (
-				((loram and hiram and a15 and not a14 and a13 and not aec and rw and game) 
-				or (hiram and a15 and a14 and a13 and not aec and rw and game) 
-				or (hiram and a15 and a14 and a13 and not aec and rw and not exrom and not game) 
-				or (hiram and not charen and a15 and a14 and not a13 and a12 and not aec and rw and game) 
-				or (loram and not charen and a15 and a14 and not a13 and a12 and not aec and rw and game) 
-				or (hiram and not charen and a15 and a14 and not a13 and a12 and not aec and rw and not exrom and not game) 
-				or (va14 and aec and game and not va13 and va12) 
-				or (va14 and aec and not exrom and not game and not va13 and va12) 
-				or (hiram and charen and a15 and a14 and not a13 and a12 and ba and not aec and rw and game) 
-				or (hiram and charen and a15 and a14 and not a13 and a12 and not aec and not rw and game) 
-				or (loram and charen and a15 and a14 and not a13 and a12 and ba and not aec and rw and game) 
-				or (loram and charen and a15 and a14 and not a13 and a12 and not aec and not rw and game) 
-				or (hiram and charen and a15 and a14 and not a13 and a12 and ba and not aec and rw and not exrom and not game) 
-				or (hiram and charen and a15 and a14 and not a13 and a12 and not aec and not rw and not exrom and not game) 
-				or (loram and charen and a15 and a14 and not a13 and a12 and ba and not aec and rw and not exrom and not game) 
-				or (loram and charen and a15 and a14 and not a13 and a12 and not aec and not rw and not exrom and not game) 
-				or (a15 and a14 and not a13 and a12 and ba and not aec and rw and exrom and not game) 
-				or (a15 and a14 and not a13 and a12 and not aec and not rw and exrom and not game) 
-				or (loram and hiram and a15 and not a14 and not a13 and not aec and rw and not exrom) 
-				or (a15 and not a14 and not a13 and not aec and exrom and not game) 
-				or (hiram and a15 and not a14 and a13 and not aec and rw and not exrom and not game) 
-				or (a15 and a14 and a13 and not aec and exrom and not game) 
-				or (aec and exrom and not game and va13 and va12) 
+				((loram and hiram and a15 and not a14 and a13 and aec and rw and game) 
+				or (hiram and a15 and a14 and a13 and aec and rw and game) 
+				or (hiram and a15 and a14 and a13 and aec and rw and not exrom and not game) 
+				or (hiram and not charen and a15 and a14 and not a13 and a12 and aec and rw and game) 
+				or (loram and not charen and a15 and a14 and not a13 and a12 and aec and rw and game) 
+				or (hiram and not charen and a15 and a14 and not a13 and a12 and aec and rw and not exrom and not game) 
+				or (va14 and not aec and game and not va13 and va12) 
+				or (va14 and not aec and not exrom and not game and not va13 and va12) 
+				or (hiram and charen and a15 and a14 and not a13 and a12 and ba and aec and rw and game) 
+				or (hiram and charen and a15 and a14 and not a13 and a12 and aec and not rw and game) 
+				or (loram and charen and a15 and a14 and not a13 and a12 and ba and aec and rw and game) 
+				or (loram and charen and a15 and a14 and not a13 and a12 and aec and not rw and game) 
+				or (hiram and charen and a15 and a14 and not a13 and a12 and ba and aec and rw and not exrom and not game) 
+				or (hiram and charen and a15 and a14 and not a13 and a12 and aec and not rw and not exrom and not game) 
+				or (loram and charen and a15 and a14 and not a13 and a12 and ba and aec and rw and not exrom and not game) 
+				or (loram and charen and a15 and a14 and not a13 and a12 and aec and not rw and not exrom and not game) 
+				or (a15 and a14 and not a13 and a12 and ba and aec and rw and exrom and not game) 
+				or (a15 and a14 and not a13 and a12 and aec and not rw and exrom and not game) 
+				or (loram and hiram and a15 and not a14 and not a13 and aec and rw and not exrom) 
+				or (a15 and not a14 and not a13 and aec and exrom and not game) 
+				or (hiram and a15 and not a14 and a13 and aec and rw and not exrom and not game) 
+				or (a15 and a14 and a13 and aec and exrom and not game) 
+				or (not aec and exrom and not game and va13 and va12) 
 				or (not a15 and not a14 and a12 and exrom and not game) 
 				or (not a15 and not a14 and a13 and exrom and not game) 
 				or (not a15 and a14 and exrom and not game) 
