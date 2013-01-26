@@ -81,7 +81,6 @@ begin
 			roml => roml,
 			io => ioBuffer,
 			ramrw => i_ramrw,
-			grw => aux(0),
 			charom => charom,
 			kernal => kernal,
 			basic => basic,
@@ -249,6 +248,6 @@ begin
 	casram <= misc3;
 	
 	-- map some interesting signals to the aux lines
-	aux(7 downto 1) <= a(7 downto 1);
+	aux(7 downto 0) <= a(7 downto 0);
 
 end architecture rtl;
