@@ -44,10 +44,10 @@ entity c64pla_251715 is
 		restore: in std_logic;
 		game: in std_logic;
 
-		clk: in std_logic;
+		clk: out std_logic;
 
 		aux_dir: out std_logic;
-		aux: inout std_logic_vector(7 downto 0);
+		aux: out std_logic_vector(7 downto 0);
 
 		misc1: out std_logic;
 		misc2: out std_logic;
@@ -58,11 +58,13 @@ end c64pla_251715;
 architecture rtl of c64pla_251715 is
 
 signal ioBuffer: std_logic;
+signal io1Buffer: std_logic;
+signal io2Buffer: std_logic;
 signal chip2_ic13_y12n: std_logic;
 signal chip2_ic13_y13n: std_logic;
-signal i_casram: std_logic;
-signal i_ramrw: std_logic;
-
+signal casramBuffer: std_logic;
+signal ramrwBuffer: std_logic;
+signal ledBuffer: std_logic := '0';
 signal counter: unsigned(10 downto 0) := (others => '0');
 
 begin
@@ -80,11 +82,11 @@ begin
 			romh => romh,
 			roml => roml,
 			io => ioBuffer,
-			ramrw => i_ramrw,
+			ramrw => ramrwBuffer,
 			charom => charom,
 			kernal => kernal,
 			basic => basic,
-			casram => i_casram,
+			casram => casramBuffer,
 			xoe => '0',
 			va12 => ma(4),
 			va13 => ma(5),
@@ -98,23 +100,23 @@ begin
 
 	chip2_ic13: entity ttl74139
 		port map(
-			-- decoder 1
+			-- decoder 1 - IO-area decode 1
 			g1n => ioBuffer,
 			a1 => a(10),
 			b1 => a(11),
 			y10n => vic,
 			y11n => sid,
-			y12n => chip2_ic13_y12n,
-			y13n => chip2_ic13_y13n,
+			y12n => chip2_ic13_y12n, -- colram
+			y13n => chip2_ic13_y13n, -- '2' side qualifier
 			
-			-- decoder 2
+			-- decoder 2 - IO-area decode 2
 			g2n => chip2_ic13_y13n,
 			a2 => a(8),
 			b2 => a(9),
 			y20n => cia1,
 			y21n => cia2,
-			y22n => io1,
-			y23n => io2
+			y22n => io1Buffer,
+			y23n => io2Buffer
 	);
 	
 	chip2_ic11: entity ttl74257
@@ -220,34 +222,47 @@ begin
 		);
 	
 	colram <= chip2_ic13_y12n and aec;
-	ramrw <= i_ramrw or ras;
+	ramrw <= ramrwBuffer or ras;
 
 	-- A direct mapping. Might work ok but might need additional logic.
 	nmi <= restore;
 	-- Define directions for outputs..
 	dir1 <= not aec;
-	dir2 <= aec;
+	dir2 <= '0';
 	aux_dir <= '1';
 	-- Enable the voltage level shifters..
 	oe <= '0';
 	
 	-- Connect the ioBuffer to the 'io' output pin..
 	io <= ioBuffer;
+	io1 <= io1Buffer;
+	io2 <= io2Buffer;
 
-	-- LED blinking
-	process(phi0)
+	-- LED test
+	-- The CPLD is too fast, sometimes spikes are detected at the beginning when the
+	-- address lines are unstable.
+	-- This process samples in the middle of a cycle, which is on falling edge of CAS.
+	process(cas)
 	begin
-		if rising_edge(phi0) then 
-			counter <= counter + 1;
-			misc2 <= counter(counter'high);
+		if falling_edge(cas) then
+			if io1Buffer = '0' then
+				ledBuffer <= '1';
+			end if;
+			if io2Buffer = '0' then
+				ledBuffer <= '0';
+			end if;
 		end if;
 	end process;
 	
-	-- external RC delay
-	misc1 <= i_casram;
+	-- external RC delay for casram 
+	misc1 <= casramBuffer;
 	casram <= misc3;
 	
 	-- map some interesting signals to the aux lines
 	aux(7 downto 0) <= a(7 downto 0);
+	-- map clock
+	clk <= phi0;
+	-- LED output
+	misc2 <= ledBuffer;
 
 end architecture rtl;
