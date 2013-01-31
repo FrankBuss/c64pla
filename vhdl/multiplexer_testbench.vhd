@@ -41,23 +41,28 @@ begin
 		wait for 1 ns;
 		
 		-- test output
-		assert y <= y_test report "error" severity failure;
+		assert y = y_test report "error, gn: " & std_Logic'image(gn_test) &
+			", sel: " & std_Logic'image(sel_test) &
+			", a: " & std_Logic'image(a_test) &
+			", b: " & std_Logic'image(b_test) &
+			", y: " & std_Logic'image(y_test)
+			severity failure;
 	end procedure;
 	begin
 		-- function table on page 4 of http://www.nxp.com/documents/data_sheet/74HC258.pdf
 		functionTest('1', '0', '0', '0', 'Z');
-		functionTest('0', '0', '0', '0', '1');
-		functionTest('0', '0', '1', '0', '0');
-		functionTest('0', '1', '0', '0', '1');
-		functionTest('0', '1', '0', '1', '0');
+		functionTest('0', '0', '0', '0', '0');
+		functionTest('0', '0', '1', '0', '1');
+		functionTest('0', '1', '0', '0', '0');
+		functionTest('0', '1', '0', '1', '1');
 		-- No Care permutations..
 		functionTest('1', '1', '0', '0', 'Z');
 		functionTest('1', '0', '1', '0', 'Z');
 		functionTest('1', '0', '0', '1', 'Z');
-		functionTest('0', '0', '0', '1', '1');
-		functionTest('0', '0', '1', '1', '0');
-		functionTest('0', '1', '1', '0', '1');
-		functionTest('0', '1', '1', '1', '0');
+		functionTest('0', '0', '0', '1', '0');
+		functionTest('0', '0', '1', '1', '1');
+		functionTest('0', '1', '1', '0', '0');
+		functionTest('0', '1', '1', '1', '1');
 		functionTest('1', '0', '1', '1', 'Z');
 		functionTest('1', '1', '0', '1', 'Z');
 		functionTest('1', '1', '1', '0', 'Z');
