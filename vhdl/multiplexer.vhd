@@ -20,9 +20,9 @@ begin
 	begin
 		if gn = '0' then
 			if sel = '1' then 
-				y <= a; 
-			else 
 				y <= b; 
+			else 
+				y <= a; 
 			end if;
 		else
 			y <= 'Z';
