@@ -4121,7 +4121,6 @@ architecture test of c64pla7_testbench is
 	signal romh: std_logic := '0';
 	signal roml: std_logic := '0';
 	signal io: std_logic := '0';
-	signal ramrw: std_logic := '0';
 	signal grw: std_logic := '0';
 	signal charom: std_logic := '0';
 	signal kernal: std_logic := '0';
@@ -4152,7 +4151,7 @@ begin
 			romh => romh,
 			roml => roml,
 			io => io,
-			ramrw => ramrw,
+			grw => grw,
 			charom => charom,
 			kernal => kernal,
 			basic => basic,
@@ -4195,14 +4194,14 @@ begin
 			va12 <= input(0);
 			wait for 1 ns;
 			expectedOutput := testVectors(i);
-			assert casram <= expectedOutput(0) report "error" severity failure;
-			assert basic <= expectedOutput(1) report "error" severity failure;
-			assert kernal <= expectedOutput(2) report "error" severity failure;
-			assert charom <= expectedOutput(3) report "error" severity failure;
-			assert grw <= expectedOutput(4) report "error" severity failure;
-			assert io <= expectedOutput(5) report "error" severity failure;
-			assert roml <= expectedOutput(6) report "error" severity failure;
-			assert romh <= expectedOutput(7) report "error" severity failure;
+			assert casram = expectedOutput(0) report "error" severity failure;
+			assert basic = expectedOutput(1) report "error" severity failure;
+			assert kernal = expectedOutput(2) report "error" severity failure;
+			assert charom = expectedOutput(3) report "error" severity failure;
+			assert grw = expectedOutput(4) report "error" severity failure;
+			assert io = expectedOutput(5) report "error" severity failure;
+			assert roml = expectedOutput(6) report "error" severity failure;
+			assert romh = expectedOutput(7) report "error" severity failure;
 		end loop;
 
 		-- show simulation end

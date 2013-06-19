@@ -84,7 +84,6 @@ signal ioBuffer: std_logic;
 signal io1Buffer: std_logic;
 signal io2Buffer: std_logic;
 signal casramBuffer: std_logic;
-signal ramrwBuffer: std_logic;
 signal addressBuffer: std_logic_vector(7 downto 0);
 signal ledBuffer: std_logic := '0';
 
@@ -103,7 +102,7 @@ begin
 			romh => romh,
 			roml => roml,
 			io => ioBuffer,
-			ramrw => ramrwBuffer,
+			grw => open,
 			charom => charom,
 			kernal => kernal,
 			basic => basic,
@@ -230,7 +229,7 @@ begin
 	end process;
 	
 	-- allow RAM write when RAS is 0
-	ramrw <= ramrwBuffer or ras;
+	ramrw <= rw or not aec or ras;
 
 	-- A direct mapping. Might work ok but might need additional logic.
 	nmi <= restore;
