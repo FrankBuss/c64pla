@@ -15,7 +15,7 @@ entity c64pla7 is
 		romh: out std_logic;
 		roml: out std_logic;
 		io: out std_logic;
-		ramrw: out std_logic;
+		grw: out std_logic;
 		charom: out std_logic;
 		kernal: out std_logic;
 		basic: out std_logic;
@@ -42,7 +42,7 @@ begin
 			romh <= 'Z';
 			roml <= 'Z';
 			io <= 'Z';
-			ramrw <= 'Z';
+			grw <= 'Z';
 			charom <= 'Z';
 			kernal <= 'Z';
 			basic <= 'Z';
@@ -69,8 +69,7 @@ begin
 				or (a15 and a14 and not a13 and a12 and ba and aec and rw and exrom and not game) 
 				or (a15 and a14 and not a13 and a12 and aec and not rw and exrom and not game))  );
 
-			ramrw <= not (
-				(not rw and aec)  ) ;
+			grw <= cas or not a15 or not a14 or a13 or not a12 or not aec or rw;
 
 			charom <= not (
 				((hiram and not charen and a15 and a14 and not a13 and a12 and aec and rw and game) 

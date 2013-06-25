@@ -63,7 +63,6 @@ signal io2Buffer: std_logic;
 signal chip2_ic13_y12n: std_logic;
 signal chip2_ic13_y13n: std_logic;
 signal casramBuffer: std_logic;
-signal ramrwBuffer: std_logic;
 signal ledBuffer: std_logic := '0';
 signal counter: unsigned(10 downto 0) := (others => '0');
 
@@ -82,7 +81,7 @@ begin
 			romh => romh,
 			roml => roml,
 			io => ioBuffer,
-			ramrw => ramrwBuffer,
+			grw => open,
 			charom => charom,
 			kernal => kernal,
 			basic => basic,
@@ -222,7 +221,7 @@ begin
 		);
 	
 	colram <= chip2_ic13_y12n and aec;
-	ramrw <= ramrwBuffer or ras;
+	ramrw <= rw or not aec or ras;
 
 	-- A direct mapping. Might work ok but might need additional logic.
 	nmi <= restore;
